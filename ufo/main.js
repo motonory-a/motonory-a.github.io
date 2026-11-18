@@ -5,8 +5,8 @@
   const spots = dataset.spots;
   const people = dataset.people;
   const categoryMap = Object.fromEntries(dataset.categories.map(x => [x.id,x.label]));
-  const statusMap = {official:'自治体・公式の記録',press:'取材・報道あり',archive:'民間資料・研究記録'};
-  const kindSymbols = {observe:'✦',event:'◉',case:'◈',legend:'◇',facility:'⌂',phenomenon:'✧'};
+  const statusMap = {official:'自治体・公式の記録',press:'取材・報道あり',archive:'民間資料・研究記録',unverified:'真偽不明（あやしい話）'};
+  const kindSymbols = {observe:'✦',event:'◉',case:'◈',legend:'◇',facility:'⌂',phenomenon:'✧',rumor:'？'};
   const state = {category:'all',search:'',visitOnly:false,view:'list',userLocation:null};
   let map = null;
   let markers = null;

@@ -45,3 +45,5 @@
 @media(max-width:1050px){.story-grid{grid-template-columns:1fr 1fr}.story-main{grid-column:1/-1}.sky-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.story-grid,.sky-grid{grid-template-columns:1fr}.story-main{grid-column:auto}.story-year{font-size:32px}.closing{padding:50px 0 60px}}
 @media(max-width:760px){.section h2{font-size:clamp(18px,4.9vw,24px);letter-spacing:.02em}}
+/* うわさ・真偽不明（2026-11-19） */
+.source-badge[data-status=unverified]{color:#ffe0b0;background:#5a3a14;border:1px dashed #ffbf66}

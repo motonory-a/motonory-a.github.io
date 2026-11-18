@@ -1,4 +1,4 @@
-// 日本全国UFOミステリーマップ データ（2026-11-18 更新：32件）
+// 日本全国UFOミステリーマップ データ（2026-11-19 更新：41件・人物6件）
 window.UFO_DATA = {
   "reviewedAt": "2026-11-18",
   "spots": [
@@ -826,6 +826,234 @@ window.UFO_DATA = {
           "https://news.yahoo.co.jp/articles/6f3e03c826974558dfcdea3c201569184cbe2629"
         ]
       ]
+    },
+    {
+      "id": "meiji-rings-1999",
+      "name": "明治神宮上空の透明な輪（1999年）",
+      "pref": "東京都",
+      "city": "渋谷区",
+      "kind": "rumor",
+      "era": "1999年10月11日とされる",
+      "status": "unverified",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "明治神宮の上空に、透明な輪がいくつも現れたと語られている。見たのは同じ団体の人たちだけ。",
+      "story": "1999年10月11日、明治神宮の上空に透明な輪が約60個現れ、UFO研究団体のメンバーが目撃・撮影したと語られています。ただ、目撃したのは同じ団体の中の人たちで、第三者の証言や当時の報道は確認できていません。英語の記事で紹介されているのみで、写真の検証もされていません。",
+      "access": "明治神宮は開門時間内に参拝できます。夜間は閉門しています。場所は地域単位で表示します。",
+      "address": "東京都渋谷区（地域単位で表示）",
+      "mapSearchQuery": "明治神宮",
+      "regionOnly": true,
+      "sources": [
+        [
+          "英語記事（転載）",
+          "https://culteducation.com/group/1208-the-ufo-believers/21165-close-encounters-of-the-japanese-kind.html"
+        ]
+      ]
+    },
+    {
+      "id": "hokkaido-scramble-1978",
+      "name": "根室海峡付近のスクランブル（1978年）",
+      "pref": "北海道",
+      "city": "根室海峡付近",
+      "kind": "rumor",
+      "era": "1978年8月17日とされる",
+      "status": "unverified",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "自衛隊のレーダーが正体不明の目標を捉え、戦闘機が飛んだが何も見えなかったという話。",
+      "story": "1978年8月17日の深夜、航空自衛隊のレーダーが識別できない目標を捉え、戦闘機が緊急発進したものの姿は確認できなかったと語られています。新聞の夕刊で報じられたとする資料がありますが、新聞そのものはまだ確認できていません。現時点ではUFO愛好家のまとめや雑誌の記事でたどれる話です。",
+      "access": "上空・海上の出来事で、観覧場所はありません。場所は地域単位で表示します。",
+      "address": "北海道 根室海峡付近（地域単位で表示）",
+      "mapSearchQuery": "北海道 根室市",
+      "regionOnly": true,
+      "sources": [
+        [
+          "日本のUFO遭遇事件（まとめサイト）",
+          "http://www.fureai.or.jp/~oomiya/UFO_d3.html"
+        ]
+      ]
+    },
+    {
+      "id": "hyakuna-lights-2026",
+      "name": "百名ビーチの空に光る物体（2026年）",
+      "pref": "沖縄県",
+      "city": "南城市",
+      "kind": "rumor",
+      "era": "2026年7月6日とされる",
+      "status": "unverified",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "強く光る物体が2つに分かれ、並んで東の空を動いたという目撃談。目撃者は1人。",
+      "story": "2026年7月6日の夜、南城市の百名ビーチで、東の空に強く光る物体が2つに分かれて並び、同じ方向へ移動しながら約20分見えたと伝えられています。地元紙の報道を引用した海外のニュースサイトで紹介されたもので、目撃者は1人です。専門家は大気現象やヘリコプターの可能性を挙げています。元の記事はまだ確認できていません。",
+      "access": "百名ビーチは自由に行けますが、夜の海辺は足元と天候に注意してください。場所は地域単位で表示します。",
+      "address": "沖縄県南城市（地域単位で表示）",
+      "mapSearchQuery": "百名ビーチ",
+      "regionOnly": true,
+      "sources": [
+        [
+          "Bastille Post（地元紙の引用）",
+          "https://www.bastillepost.com/hongkong/article/15673180"
+        ]
+      ]
+    },
+    {
+      "id": "akita-airport-1976",
+      "name": "秋田空港の金色の円盤（1976年）",
+      "pref": "秋田県",
+      "city": "秋田市雄和",
+      "kind": "rumor",
+      "era": "1976年10月17日とされる",
+      "status": "unverified",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "管制官や機長も見たとされる金色の円盤。元は米国のタブロイド紙で、気球だった説が有力。",
+      "story": "1976年10月17日の午前中、秋田空港で管制塔の職員や旅客機の機長、テレビ局の記者らが金色に光る円盤を約5分見たと語られています。ただ、元になった記事は1977年の米国のタブロイド紙で、日本の当時の報道は見つかっていません。研究者の再検証では、岩手県の三陸から放たれた研究用の気球だった可能性が高いとされています。",
+      "access": "空港ターミナルは営業時間内に利用できます。場所は地域単位で表示します。",
+      "address": "秋田県秋田市雄和（地域単位で表示）",
+      "mapSearchQuery": "秋田空港",
+      "regionOnly": true,
+      "sources": [
+        [
+          "UFO研究ブログ（再検証）",
+          "https://www.hjkc.de/_blog/22202-ufo-forschung-weeding-out-the-weinstein-catalog-october-17-1976-akita-airport-japan"
+        ]
+      ]
+    },
+    {
+      "id": "utsunomiya-1958",
+      "name": "宇都宮の山中で円盤と二人組に会った話（1958年）",
+      "pref": "栃木県",
+      "city": "宇都宮市",
+      "kind": "rumor",
+      "era": "1958年9月中旬とされる",
+      "status": "unverified",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "山の中で円盤と外国人のような男二人に出会い、男たちは円盤で去った、という一人の証言。",
+      "story": "1958年9月中旬、宇都宮市の職員の男性が山中で円盤のような物体と、外国人に見える男二人に出会い、男たちは物体に乗って浮かび上がり去っていったと語られています。本人が職場で話したのを当時のUFO研究団体の関係者が聞き、半年以上たってから聞き取りをしたとされます。証言は一人だけで、現場の場所も分かっていません。",
+      "access": "現場の場所は分かっていません。場所は地域単位で表示します。",
+      "address": "栃木県宇都宮市（地域単位で表示）",
+      "mapSearchQuery": "栃木県 宇都宮市",
+      "regionOnly": true,
+      "sources": [
+        [
+          "UFO事件簿（個人ブログ）",
+          "http://ufojikenbo.blogspot.com/2016/04/utsunomiya.html"
+        ]
+      ]
+    },
+    {
+      "id": "sado-videos",
+      "name": "佐渡島で相次ぐUFO動画（2025年〜）",
+      "pref": "新潟県",
+      "city": "佐渡市",
+      "kind": "rumor",
+      "era": "2025年8月〜",
+      "status": "unverified",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "佐渡島で黒い影や光る球の動画が撮られたと東スポが報道。撮影者はいずれも匿名。",
+      "story": "2025年8月下旬から、佐渡汽船の近くや佐和田地区などで、黒い楕円形の影や白く光る複数の球の動画が撮られたと東京スポーツが報じています。撮影者はいずれも匿名で、記事の中心はオカルト評論家のコメントです。ドローンの可能性も取りざたされており、独立した確認はされていません。",
+      "access": "佐渡島へは新潟港からフェリーなどで渡れます。場所は地域単位で表示します。",
+      "address": "新潟県佐渡市（地域単位で表示）",
+      "mapSearchQuery": "新潟県 佐渡市",
+      "regionOnly": true,
+      "sources": [
+        [
+          "東京スポーツ（2026年）",
+          "https://www.tokyo-sports.co.jp/articles/-/402550"
+        ],
+        [
+          "ライブドアニュース（2025年）",
+          "https://news.livedoor.com/article/detail/29744343/"
+        ]
+      ]
+    },
+    {
+      "id": "tsurugi-video",
+      "name": "剣山のUFO動画",
+      "pref": "徳島県",
+      "city": "三好市・美馬市境（剣山）",
+      "kind": "rumor",
+      "era": "2024年ごろ（SNSで拡散）",
+      "status": "unverified",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "剣山の山小屋で撮られた、窓のような光が並ぶ動画がSNSで「本物のUFO」と話題に。",
+      "story": "剣山の頂上にある山小屋の別館で撮影された、雲のような塊に窓のような光が一列に並んで点滅する動画が、SNSで「本物のUFOだ」と話題になりました。これについて、山小屋のスタッフが徳島新聞の連載で正体についての見解を書いています。山小屋側の説明の中身は、まだ確認できていません。",
+      "access": "剣山は山開きの期間に登山リフトと徒歩で登れます。山の天候に注意してください。場所は地域単位で表示します。",
+      "address": "徳島県 剣山（地域単位で表示）",
+      "mapSearchQuery": "剣山",
+      "regionOnly": true,
+      "sources": [
+        [
+          "徳島新聞（山小屋スタッフの連載）",
+          "https://www.topics.or.jp/articles/-/1201511"
+        ]
+      ]
+    },
+    {
+      "id": "kuraiyama",
+      "name": "位山（UFOが巨石を運んだという説）",
+      "pref": "岐阜県",
+      "city": "高山市一之宮町",
+      "kind": "rumor",
+      "era": "近年の説",
+      "status": "unverified",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "飛騨の霊峰・位山。巨石はUFOが運んだ、岩は着陸の目印だった、という説が語られる。",
+      "story": "位山は、飛騨一宮水無神社の神体山とされる山です。山中に点在する巨石について、UFOが運んだ、天の岩戸のそばの岩はUFOの着陸の目印だった、といった説がネット上で語られています。登山者がUFOらしき物体を撮ったという報告もあります。いずれも古くからの言い伝えではなく、近年広まった説です。",
+      "access": "登山道があります。山道なので夜の入山はおすすめしません。場所は地域単位で表示します。",
+      "address": "岐阜県高山市一之宮町（地域単位で表示）",
+      "mapSearchQuery": "位山",
+      "regionOnly": true,
+      "sources": [
+        [
+          "創楽（個人の登山サイト）",
+          "https://souraku.jp/newpage123.html"
+        ],
+        [
+          "同サイトの撮影報告",
+          "https://souraku.jp/home/newpage311.html"
+        ]
+      ]
+    },
+    {
+      "id": "masuda-iwafune",
+      "name": "益田岩船（古代宇宙人説の巨石）",
+      "pref": "奈良県",
+      "city": "橿原市白橿町",
+      "kind": "rumor",
+      "era": "7世紀ごろの石造物",
+      "status": "unverified",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "奈良県指定史跡の巨大な石造物。用途が謎のため、海外番組で宇宙人と結びつけられた。",
+      "story": "益田岩船は、東西約11m・南北約8m・高さ約4.7mの花崗岩の石造物で、奈良県の指定史跡です。用途ははっきりせず、占いの台や、石の墓をつくる途中で放棄されたものなど、いくつかの説があります。米国のテレビ番組「古代の宇宙人」が撮影に訪れたことで、宇宙人と結びつける説でも知られるようになりました。史跡そのものは確かな存在で、宇宙人説は根拠のない話です。",
+      "access": "近鉄岡寺駅から歩いて約15分、さらに山道を約5分です。夜は足元が危ないので昼間に行きましょう。場所は地域単位で表示します。",
+      "address": "奈良県橿原市白橿町（地域単位で表示）",
+      "mapSearchQuery": "益田岩船",
+      "regionOnly": true,
+      "sources": [
+        [
+          "関西ウォーカー",
+          "https://www.walkerplus.com/article/108041/"
+        ],
+        [
+          "旅行比較サイト たびま",
+          "https://tabi-mag.jp/na0386/"
+        ]
+      ]
     }
   ],
   "people": [
@@ -892,6 +1120,38 @@ window.UFO_DATA = {
       "sourceLabel": "2026年イベント主催者情報",
       "sourceUrl": "https://lp.p.pia.jp/event/leisure/469437/index.html",
       "note": "撮影会の告知に記載された団体窓口です。今後の開催を保証するものではありません。"
+    },
+    {
+      "id": "kawamata",
+      "name": "川又淳一",
+      "kana": "かわまた じゅんいち",
+      "role": "UFOコンタクティ",
+      "area": "茨城県",
+      "initial": "川",
+      "color": "violet",
+      "bio": "茨城県笠間市で店を営むUFOコンタクティ。子どものころからUFOに乗ったと語り、宇宙人との交流体験を雑誌やネットのインタビューで話しています。2025年には著書『多次元おじさんの宇宙人ライフ』（ナチュラルスピリット）を出しました。",
+      "record": "著書『多次元おじさんの宇宙人ライフ』（2025年）、StarPeopleのインタビュー連載、出版記念トークイベント（2025年9月・オンライン）",
+      "contactLabel": "出版社の著者ページ",
+      "contactUrl": "https://www.naturalspirit.co.jp/author/a286586.html",
+      "sourceLabel": "インタビュー連載",
+      "sourceUrl": "https://starpeople.jp/interview/20191118/8308/",
+      "note": "UFOに乗った・宇宙人と交流したという話は本人の体験談で、第三者による確認はありません。本人の公式な問い合わせ窓口は確認できていないため、出版社の著者ページを案内しています。"
+    },
+    {
+      "id": "nao-owllodge",
+      "name": "なお（OWL LODGE）",
+      "kana": "なお",
+      "role": "UFOコンタクティ・カフェ店主",
+      "area": "埼玉県所沢市",
+      "initial": "な",
+      "color": "rose",
+      "bio": "埼玉県所沢市のカフェ＆バー「OWL LODGE（アウルロッジ）」の店主。UFOを呼べるコンタクティとして「もやもやさまぁ～ず2」「月曜から夜ふかし」などのテレビ番組で紹介されました。YouTubeの生配信「UFO千夜一夜NEO」にも出演しています。",
+      "record": "テレビ出演（もやもやさまぁ～ず2・2021年7月ほか）、YouTube生配信「UFO千夜一夜NEO」、店でのUFO関連イベント",
+      "contactLabel": "本人の公式リンク集",
+      "contactUrl": "https://1link.jp/owllodge",
+      "sourceLabel": "店の公式サイト",
+      "sourceUrl": "https://owllodge.amebaownd.com/",
+      "note": "「UFOを呼べる」は本人と店の紹介による主張で、科学的に確かめられた能力ではありません。営業日・イベントは店の公式情報で確認してください。"
     }
   ],
   "categories": [
@@ -922,6 +1182,10 @@ window.UFO_DATA = {
     {
       "id": "phenomenon",
       "label": "発光現象の記録"
+    },
+    {
+      "id": "rumor",
+      "label": "うわさ・真偽不明"
     }
   ]
 };
