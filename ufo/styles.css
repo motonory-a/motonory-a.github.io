@@ -52,3 +52,7 @@
 .legend-pin{color:var(--gold)}
 .legend-area{display:inline-block;width:16px;height:16px;border:2px dashed #ffd98a;border-radius:50%;background:rgba(154,67,248,.25);vertical-align:-3px;margin-left:8px}
 .ufo-pin.area-pin{opacity:.9;border-style:dashed}
+/* ピンのまとまり表示（2026-11-19） */
+.marker-cluster-small,.marker-cluster-medium,.marker-cluster-large{background:rgba(154,67,248,.35)!important}
+.marker-cluster-small div,.marker-cluster-medium div,.marker-cluster-large div{background:rgba(109,61,210,.92)!important;color:#fff!important;font-weight:800;border:1px solid #e2c4ff}
+.filter-search .visit-label+.visit-label{margin-left:6px}

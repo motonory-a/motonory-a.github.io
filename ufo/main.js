@@ -7,9 +7,10 @@
   const categoryMap = Object.fromEntries(dataset.categories.map(x => [x.id,x.label]));
   const statusMap = {official:'自治体・公式の記録',press:'取材・報道あり',archive:'民間資料・研究記録',unverified:'真偽不明（あやしい話）'};
   const kindSymbols = {observe:'✦',event:'◉',case:'◈',legend:'◇',facility:'⌂',phenomenon:'✧',rumor:'？'};
-  const state = {category:'all',search:'',visitOnly:false,view:'map',userLocation:null};
+  const state = {category:'all',search:'',visitOnly:false,hideUnverified:false,view:'map',userLocation:null};
   let map = null;
   let markers = null;
+  let circles = null;
 
   const $ = selector => document.querySelector(selector);
   const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -23,7 +24,7 @@
   function getFiltered() {
     const query=state.search.toLocaleLowerCase('ja').trim();
     let result=spots.filter(spot => (state.category==='all'||spot.kind===state.category)
-      &&(!state.visitOnly||spot.visit==='public')
+      &&(!state.visitOnly||spot.visit==='public')&&(!state.hideUnverified||spot.status!=='unverified')
       &&(!query||[spot.name,spot.pref,spot.city,spot.lead,spot.era,spot.story].join(' ').toLocaleLowerCase('ja').includes(query)));
     if(state.userLocation) result.sort((a,b)=>distance(state.userLocation,a)-distance(state.userLocation,b));
     else result.sort((a,b)=>Number(Boolean(b.featured))-Number(Boolean(a.featured)));
@@ -87,9 +88,12 @@
     if(!map){
       map=L.map('spot-map',{scrollWheelZoom:false}).setView([37.2,137.8],5);
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
-      markers=L.layerGroup().addTo(map);
+      markers=(L.markerClusterGroup?L.markerClusterGroup({showCoverageOnHover:false,maxClusterRadius:40,spiderfyOnMaxZoom:true}):L.layerGroup()).addTo(map);
+      circles=L.layerGroup();
+      const syncCircles=()=>{if(map.getZoom()>=7){if(!map.hasLayer(circles))circles.addTo(map)}else if(map.hasLayer(circles))map.removeLayer(circles)};
+      map.on('zoomend',syncCircles);setTimeout(syncCircles,300);
     }
-    markers.clearLayers();
+    markers.clearLayers();circles.clearLayers();
     const bounds=[];
     pinSpots.forEach(spot=>{
       const icon=L.divIcon({html:`<div class="ufo-pin ${spot.kind}"><span>${kindSymbols[spot.kind]||'✦'}</span></div>`,className:'',iconSize:[28,28],iconAnchor:[14,26]});
@@ -99,7 +103,7 @@
     });
     visible.filter(spot=>!hasCoordinates(spot)&&spot.area).forEach(spot=>{
       const a=spot.area;
-      const circle=L.circle([a.lat,a.lng],{radius:a.radiusKm*1000,color:'#ffd98a',weight:2,dashArray:'6 6',fillColor:'#9a43f8',fillOpacity:.18}).addTo(markers);
+      const circle=L.circle([a.lat,a.lng],{radius:a.radiusKm*1000,color:'#ffd98a',weight:2,dashArray:'6 6',fillColor:'#9a43f8',fillOpacity:.18}).addTo(circles);
       const icon=L.divIcon({html:`<div class="ufo-pin area-pin ${spot.kind}"><span>${kindSymbols[spot.kind]||'✦'}</span></div>`,className:'',iconSize:[24,24],iconAnchor:[12,12]});
       const marker=L.marker([a.lat,a.lng],{icon}).addTo(markers);
       const pop=`<div class="map-popup"><h4>${escapeHtml(spot.name)}</h4><p>${escapeHtml(spot.pref)} ${escapeHtml(spot.city)}<br>点線の円は「このあたり」の目安です。正確な場所ではありません。</p><button type="button" data-open-spot="${escapeAttr(spot.id)}">詳細を見る ↗</button></div>`;
@@ -132,7 +136,7 @@
     renderCategories();renderSpots();renderPeople();
     $('#filter-chips').addEventListener('click',event=>{const button=event.target.closest('[data-category]');if(!button)return;state.category=button.dataset.category;renderCategories();renderSpots()});
     $('#spot-search').addEventListener('input',event=>{state.search=event.target.value;renderSpots()});
-    $('#visit-only').addEventListener('change',event=>{state.visitOnly=event.target.checked;renderSpots()});
+    $('#visit-only').addEventListener('change',event=>{state.visitOnly=event.target.checked;renderSpots()});const hu=$('#hide-unverified');if(hu)hu.addEventListener('change',event=>{state.hideUnverified=event.target.checked;renderSpots()});
     $('#list-button').addEventListener('click',()=>{state.view='list';renderSpots()});
     $('#map-button').addEventListener('click',()=>{state.view='map';renderSpots()});
     document.addEventListener('click',event=>{const button=event.target.closest('[data-open-spot]');if(button)openSpot(button.dataset.openSpot)});
