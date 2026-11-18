@@ -1,0 +1,631 @@
+// 非公開プレビュー用。元の19件と人物4件を保持し、既存5件追記＋新規2件。
+window.UFO_DATA = {
+  "reviewedAt": "2026-11-18",
+  "spots": [
+    {
+      "id": "senganmori",
+      "name": "千貫森・UFOの里",
+      "pref": "福島県",
+      "city": "福島市飯野町",
+      "kind": "observe",
+      "era": "現在も観光可能",
+      "status": "official",
+      "visit": "public",
+      "lat": 37.675,
+      "lng": 140.545,
+      "lead": "「UFOの聖地」と呼ばれる円錐形の山。見学と空の観察を一度に楽しめる。",
+      "story": "謎の発光物体の目撃談が伝わり、ふもとにはUFOふれあい館。周辺ではUFOを探すイベントも開かれてきました。 福島県観光公式「ふくしまの旅」でも飯野地区の発光体などの目撃談と「UFOの里」という呼称が紹介されています。ただし、この観光ページには千貫森の名称は記載されていません。",
+      "access": "UFOふれあい館を拠点に散策。登山道の状況・開館情報は出発前に確認。",
+      "address": "福島県福島市飯野町青木字小手神森1-299",
+      "sources": [
+        [
+          "福島市公式",
+          "https://www.city.fukushima.fukushima.jp/machizukuri-kankyo/chiikishinko/3/8942.html"
+        ],
+        [
+          "UFOの里公式",
+          "https://ufonosato.com/"
+        ],
+        [
+          "福島県観光公式「ふくしまの旅」",
+          "https://fukushima.travel/destination/iino-ufo-museum/389"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "ufo-museum-fukushima",
+      "name": "UFOふれあい館",
+      "pref": "福島県",
+      "city": "福島市飯野町",
+      "kind": "facility",
+      "era": "1992年開館",
+      "status": "official",
+      "visit": "public",
+      "lat": 37.675,
+      "lng": 140.546,
+      "lead": "初めてのUFO巡りならここ。展示・映像・物産館を楽しめる。",
+      "story": "福島市の公共施設。UFO関連の展示資料、映像などがあり、隣接する物産館も見どころ。",
+      "access": "開館9:00〜17:00、月曜休館（祝日の場合は翌日）。入館料は大人400円・子ども200円（2026年11月18日確認）。訪問前に公式情報を再確認してください。",
+      "address": "福島県福島市飯野町青木字小手神森1-299",
+      "sources": [
+        [
+          "福島市施設案内",
+          "https://www.city.fukushima.fukushima.jp/shisetsu/kanko/2187.html"
+        ],
+        [
+          "福島県観光公式「ふくしまの旅」",
+          "https://fukushima.travel/destination/iino-ufo-museum/389"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "ufo-research-lab",
+      "name": "国際未確認飛行物体研究所",
+      "pref": "福島県",
+      "city": "福島市飯野町",
+      "kind": "event",
+      "era": "2021年設立",
+      "status": "official",
+      "visit": "public",
+      "lat": 37.675,
+      "lng": 140.547,
+      "lead": "観測会や目撃情報の調査活動を行う、UFO好きの交流拠点。",
+      "story": "三上丈晴氏を初代所長として、千貫森でUFOを探すイベントや研究活動を実施。イベントは開催時期・募集状況の確認が必要です。",
+      "access": "研究所のお知らせからイベントの最新情報を確認。常時観測会があるわけではありません。",
+      "address": "福島県福島市飯野町青木字小手神森1-299",
+      "sources": [
+        [
+          "研究所公式",
+          "https://ufo-laboratory.com/"
+        ],
+        [
+          "公開イベント実績",
+          "https://ufo-laboratory.com/news/"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "kofu",
+      "name": "甲府UFO事件の舞台",
+      "pref": "山梨県",
+      "city": "甲府市上町周辺",
+      "kind": "case",
+      "era": "1975年2月23日",
+      "status": "official",
+      "visit": "area",
+      "lat": 35.637,
+      "lng": 138.585,
+      "lead": "少年2人が「宇宙人に出会った」と語った、日本を代表する遭遇事件。",
+      "story": "甲府市も事件を地域の話題として紹介。当時の少年たちの証言に基づく事件で、地球外生命体の実在が確認されたものではありません。",
+      "access": "事件の舞台は住宅・農地を含む地域。私有地や畑には立ち入らず、市内の公開情報から巡る。",
+      "address": "山梨県甲府市上町周辺（具体的な事件現場への案内ではありません）",
+      "sources": [
+        [
+          "甲府市広報",
+          "https://www.city.kofu.lg.jp/k003/p005514.html"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "kera",
+      "name": "介良（けら）UFO事件",
+      "pref": "高知県",
+      "city": "高知市介良地区",
+      "kind": "case",
+      "era": "1972年夏〜秋",
+      "status": "press",
+      "visit": "area",
+      "lat": 33.554,
+      "lng": 133.601,
+      "lead": "中学生たちが小型の謎の物体を捕まえたとされる「介良事件」。",
+      "story": "当時の出来事を振り返る企画展などで紹介されてきました。物体そのものは現在検証できず、別の説明を唱える見方もあります。",
+      "access": "現場の正確な位置や公開見学施設は未確認。介良地区全体を示しています。",
+      "address": "高知県高知市介良地区（エリア目安）",
+      "sources": [
+        [
+          "テレビ高知の取材",
+          "https://newsdig.tbs.co.jp/articles/kutv/1421578?display=1"
+        ],
+        [
+          "調査資料",
+          "https://ufojapan.org/site/cases/kera.html"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "nikoro",
+      "name": "仁頃（にころ）事件",
+      "pref": "北海道",
+      "city": "北見市仁頃町",
+      "kind": "case",
+      "era": "1974年4月6日とされる",
+      "status": "archive",
+      "visit": "area",
+      "lat": 43.88,
+      "lng": 143.84,
+      "lead": "青年がUFOに乗せられたと語った、長期接触型の有名な体験談。",
+      "story": "「日本三大UFO事件」のひとつとして語られます。初期証言と後年の話の広がりは区別して扱う必要があります。",
+      "access": "特定の訪問施設ではありません。個人宅や私有地を探して訪問しないでください。",
+      "address": "北海道北見市仁頃町（エリア目安）",
+      "sources": [
+        [
+          "事件資料",
+          "https://www.ufojapan.org/site/cases/nikoro.html"
+        ]
+      ]
+    },
+    {
+      "id": "hakui-cosmo",
+      "name": "コスモアイル羽咋",
+      "pref": "石川県",
+      "city": "羽咋市",
+      "kind": "facility",
+      "era": "公開展示施設",
+      "status": "official",
+      "visit": "public",
+      "lat": 36.894,
+      "lng": 136.784,
+      "lead": "宇宙船の実物展示も。UFOの町・羽咋を旅するなら外せない場所。",
+      "story": "宇宙開発の歴史とUFO現象に関する展示を行う博物館。「そうはちぼん」の伝承にも触れられます。",
+      "access": "石川県羽咋市鶴多町免田25。開館8:30〜17:00（入館は16:30まで）、火曜休館（祝日の場合は翌水曜）。入館料金は公式情報を確認後に掲載します。訪問前に最新の開館情報を確認してください。",
+      "address": "石川県羽咋市鶴多町免田25",
+      "sources": [
+        [
+          "羽咋市公式",
+          "https://www.city.hakui.lg.jp/kankou/kankoushisetsu/12882.html"
+        ],
+        [
+          "能登観光案内",
+          "https://www.hot-ishikawa.jp/burarinoto/spot/detail_4724.html"
+        ],
+        [
+          "石川県観光公式",
+          "https://www.ishikawatravel.jp/en/spots/cosmo-isle-hakui/"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "hakui-legend",
+      "name": "羽咋の「そうはちぼん」伝説",
+      "pref": "石川県",
+      "city": "羽咋市",
+      "kind": "legend",
+      "era": "江戸時代の言い伝え",
+      "status": "official",
+      "visit": "area",
+      "lat": 36.893,
+      "lng": 136.782,
+      "lead": "仏具のような円盤状のものが飛んだという伝承は、UFOだったのか。",
+      "story": "羽咋のUFO町おこしで知られる言い伝え。昔話を宇宙人の来訪記録と断定することはできません。",
+      "access": "コスモアイル羽咋を起点に町の物語を楽しめます。",
+      "address": "石川県羽咋市（伝承エリアの目安）",
+      "sources": [
+        [
+          "能登観光案内",
+          "https://www.hot-ishikawa.jp/burarinoto/spot/detail_4724.html"
+        ]
+      ]
+    },
+    {
+      "id": "chosi-incident",
+      "name": "銚子事件・君ヶ浜のUFO伝説",
+      "pref": "千葉県",
+      "city": "銚子市君ヶ浜",
+      "kind": "legend",
+      "era": "1956年の目撃談",
+      "status": "official",
+      "visit": "public",
+      "lat": 35.707,
+      "lng": 140.868,
+      "lead": "「君ヶ浜にはUFO基地がある」――銚子に伝わる不思議な噂。",
+      "story": "銚子市観光協会は1956年の目撃談や「謎の金属箔」の噂を紹介。歴史あるローカル都市伝説です。",
+      "access": "君ヶ浜の公開された海岸・公園から景色を楽しめます。夜間の海辺は安全に注意。",
+      "address": "千葉県銚子市君ヶ浜（エリア目安）",
+      "sources": [
+        [
+          "銚子市観光協会",
+          "https://www.choshikanko.com/article-34/"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "choshi-observatory",
+      "name": "地球の丸く見える丘展望館",
+      "pref": "千葉県",
+      "city": "銚子市",
+      "kind": "event",
+      "era": "2016・2018年に召喚イベント",
+      "status": "official",
+      "visit": "public",
+      "lat": 35.708,
+      "lng": 140.856,
+      "lead": "海と空を見渡す展望館。過去にUFOを呼ぶイベントが開催された。",
+      "story": "銚子市観光協会と銚子電鉄などがイベントを開催。開催された事実と、UFOが実際に現れたかは別の問題です。",
+      "access": "イベントは過去の実績です。現在の催しは施設に直接確認してください。",
+      "address": "千葉県銚子市天王台1421-1",
+      "sources": [
+        [
+          "銚子市観光協会",
+          "https://www.choshikanko.com/article-34/"
+        ],
+        [
+          "2016年の施設報告",
+          "https://www.choshikanko.com/tenbokan/blog/index.php?e=78"
+        ]
+      ]
+    },
+    {
+      "id": "utsuro",
+      "name": "うつろ舟伝説の海岸",
+      "pref": "茨城県",
+      "city": "神栖市波崎周辺説",
+      "kind": "legend",
+      "era": "1803年の漂着譚",
+      "status": "official",
+      "visit": "area",
+      "lat": 35.748,
+      "lng": 140.828,
+      "lead": "江戸時代の文献に現れる丸い舟と謎の女性。日本版UFO伝説の代表格。",
+      "story": "国立公文書館の解説では、享和3年（1803年）2月22日、常陸国の「はらやどり」という浜に漂着したとされます。現在の神栖市波崎・舎利浜は候補地の一つですが、漂着場所は確定していません。国立公文書館は『弘賢随筆』所収「うつろ舟の蛮女」を所蔵しています。",
+      "access": "海岸の所在地は候補地として紹介しています。海岸の立入制限に注意。原資料の公開・閲覧状況は国立公文書館で確認してください。",
+      "address": "茨城県神栖市波崎付近（所在地は一説）",
+      "sources": [
+        [
+          "国立公文書館",
+          "https://www.archives.go.jp/exhibition/jousetsu_08_09.html"
+        ],
+        [
+          "同館の資料解説",
+          "https://prtimes.jp/main/html/rd/p/000000029.000136832.html"
+        ],
+        [
+          "国立公文書館・デジタル展示",
+          "https://www.archives.go.jp/exhibition/digital/hyoryu/contents/12.html"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "moroyama",
+      "name": "毛呂山町の「お椀型UFO」報道",
+      "pref": "埼玉県",
+      "city": "毛呂山町箕和田",
+      "kind": "case",
+      "era": "1981年8月16日",
+      "status": "official",
+      "visit": "area",
+      "lat": 35.934,
+      "lng": 139.308,
+      "lead": "住民が田んぼ上空に不思議な物体を見たと当時の新聞が報道。",
+      "story": "埼玉県立図書館が『埼玉新聞』『読売新聞』の当時の記事を確認しています。新聞に載ったことと物体の正体は別です。",
+      "access": "農地や私有地への立入不可。町域の位置のみ示します。",
+      "address": "埼玉県毛呂山町箕和田（エリア目安）",
+      "sources": [
+        [
+          "国立国会図書館レファレンス",
+          "https://crd.ndl.go.jp/reference/entry/index.php?id=1000227890&page=ref_view"
+        ]
+      ]
+    },
+    {
+      "id": "aomori-toraidake",
+      "name": "戸来岳の葉巻型UFO目撃談",
+      "pref": "青森県",
+      "city": "新郷村周辺",
+      "kind": "observe",
+      "era": "2013年8月とされる",
+      "status": "press",
+      "visit": "area",
+      "lat": 40.459,
+      "lng": 141.15,
+      "lead": "5人ほどが緑色に光る葉巻型物体を見たという証言。",
+      "story": "青森テレビが関係者に取材して紹介した目撃談。未確認飛行物体であることが科学的に証明されたわけではありません。",
+      "access": "山岳地帯のため冬季・熊・天候に注意。夜間登山を勧める場所ではありません。",
+      "address": "青森県新郷村・戸来岳周辺（目安）",
+      "sources": [
+        [
+          "青森テレビ取材",
+          "https://newsdig.tbs.co.jp/articles/atv/558986?display=1"
+        ]
+      ]
+    },
+    {
+      "id": "aomori-makinotai",
+      "name": "間木ノ平グリーンパーク",
+      "pref": "青森県",
+      "city": "新郷村",
+      "kind": "event",
+      "era": "ミステリーイベントの開催地",
+      "status": "press",
+      "visit": "public",
+      "lat": 40.451,
+      "lng": 141.123,
+      "lead": "UFOや都市伝説のイベントも開かれる、北東北のミステリー観光拠点。",
+      "story": "青森テレビが周辺のUFO目撃談を取材。地元でミステリーキャンプが開催された実績があります。",
+      "access": "施設の営業期間・駐車・宿泊の有無は公式情報を確認。",
+      "address": "青森県三戸郡新郷村戸来雨池",
+      "sources": [
+        [
+          "青森テレビ取材",
+          "https://newsdig.tbs.co.jp/articles/atv/558986?display=1"
+        ],
+        [
+          "イベント報道",
+          "https://www.navitabi.jp/article/11451"
+        ]
+      ]
+    },
+    {
+      "id": "aomori-daikokumori",
+      "name": "大黒森山・UFO観測会の舞台",
+      "pref": "青森県",
+      "city": "田子町",
+      "kind": "event",
+      "era": "2025年の観測会",
+      "status": "press",
+      "visit": "area",
+      "lat": 40.337,
+      "lng": 141.15,
+      "lead": "写真家・日下慶太氏が観測会を開いた山頂スポット。",
+      "story": "2025年の取材で実際に観測会が開催されたことが報道されました。次回開催は未定のため公式発信を確認してください。",
+      "access": "山の上です。登山道・交通・野生動物・天候を確認し、無理な夜間訪問は避けてください。",
+      "address": "青森県三戸郡田子町・大黒森山付近（目安）",
+      "sources": [
+        [
+          "日刊SPA!の現地取材",
+          "https://nikkan-spa.jp/2113323"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "osaka-dotonbori",
+      "name": "道頓堀UFO撮影会の舞台",
+      "pref": "大阪府",
+      "city": "大阪市中央区",
+      "kind": "event",
+      "era": "2026年6月20日にも開催",
+      "status": "press",
+      "visit": "public",
+      "lat": 34.669,
+      "lng": 135.502,
+      "lead": "UFOを呼びかける撮影会が開かれてきた、大阪ミナミの有名スポット。",
+      "story": "日本UFO協会が開催。ミスターキャロ氏や武良信行氏らが関わるイベントが報じられています。過去のイベントであり、常設サービスではありません。",
+      "access": "人通りの多い繁華街。観測しやすさよりイベント参加の楽しさに向く場所。",
+      "address": "大阪府大阪市中央区道頓堀周辺",
+      "sources": [
+        [
+          "ぴあの2026年イベント情報",
+          "https://lp.p.pia.jp/event/leisure/469437/index.html"
+        ],
+        [
+          "2023年の報道",
+          "https://www.nikkansports.com/general/nikkan/news/202306240001204.html"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "tendo-1989",
+      "name": "天童の白い球状物体の記録",
+      "pref": "山形県",
+      "city": "天童市",
+      "kind": "case",
+      "era": "1989年5月4日",
+      "status": "archive",
+      "visit": "area",
+      "lat": 38.35,
+      "lng": 140.374,
+      "lead": "UFO研究者の会合中、会場の外に白い球体が現れたという報告。",
+      "story": "民間研究団体の記録に写真と体験談が残されています。独立検証の状況は調査中です。",
+      "access": "当時の施設・場所の利用状況は別途確認が必要です。",
+      "address": "山形県天童市（エリア目安）",
+      "sources": [
+        [
+          "日本GAP関連会誌PDF",
+          "https://adamski.jp/pdf/ucon/ucon107.pdf"
+        ]
+      ]
+    },
+    {
+      "id": "tokyo-kita-1990",
+      "name": "東京都北区の発光体映像報道",
+      "pref": "東京都",
+      "city": "北区",
+      "kind": "case",
+      "era": "1990年1月31日に報道",
+      "status": "press",
+      "visit": "area",
+      "lat": 35.754,
+      "lng": 139.734,
+      "lead": "光ったり消えたりする物体を撮影したとテレビニュースで紹介。",
+      "story": "テレビ朝日の2025年特集が1990年の放送内容を振り返っています。正体や撮影地点は未確定。",
+      "access": "観光対象の施設はありません。北区のエリア表示のみ。",
+      "address": "東京都北区（地点不明）",
+      "sources": [
+        [
+          "テレビ朝日ニュース",
+          "https://news.tv-asahi.co.jp/news_politics/articles/900173288.html"
+        ]
+      ]
+    },
+    {
+      "id": "iitown-event",
+      "name": "飯野UFOフェスの召喚イベント",
+      "pref": "福島県",
+      "city": "福島市飯野町",
+      "kind": "event",
+      "era": "2025年11月8・9日（過去開催）",
+      "status": "official",
+      "visit": "public",
+      "lat": 37.66,
+      "lng": 140.533,
+      "lead": "参加者約300人で呼びかけた際、謎の光を見たと研究所が報告。",
+      "story": "研究所による当事者発表です。映像の独立検証や正体の確定は行われていないため「目撃報告」として紹介します。 2025年11月8日には飯野町商店街、9日にはUFOふれあい館で開催。主催は飯野町まちづくり研究会と飯野町商工会です。",
+      "access": "【過去開催】2025年11月8・9日の催しは終了しています。次回開催日程は未確認です。",
+      "address": "福島県福島市飯野町町43・飯野イベント広場",
+      "sources": [
+        [
+          "国際未確認飛行物体研究所の報告",
+          "https://ufo-laboratory.com/news/ufo%E7%8F%BE%E3%82%8B%EF%BC%81%EF%BC%9F%E3%80%80%E8%AA%BF%E6%9F%BB%E6%9E%90%E3%81%AE%E3%81%9F%E3%82%81%E6%9B%B4%E3%81%AA%E3%82%8B%E6%83%85%E5%A0%B1%E6%B1%82%E3%82%80%E3%80%82/"
+        ],
+        [
+          "福島市・2025年開催資料",
+          "https://www.city.fukushima.fukushima.jp/material/files/group/1/2025110601.pdf"
+        ]
+      ]
+    },
+    {
+      "id": "ufo-line",
+      "name": "UFOライン（町道瓶ヶ森線）",
+      "pref": "高知県",
+      "city": "吾川郡いの町（愛媛県境の稜線）",
+      "kind": "legend",
+      "era": "UFOラインの愛称",
+      "status": "official",
+      "visit": "public",
+      "lat": null,
+      "lng": null,
+      "lead": "標高の高い稜線を走る絶景道路。「UFOライン」の名にまつわる逸話をたどる。",
+      "story": "寒風山から瓶ヶ森へ続く、全長約27kmの稜線の道。かつて「雄峰ライン」と呼ばれ、昭和62年ごろに登山者の写真へUFOが写っていたと話題になり、「UFOライン」の愛称が広まったと紹介されています。目撃を保証する場所ではありません。",
+      "access": "車で通行できる観光道路ですが、例年11月末〜4月上旬は冬期閉鎖。夜間の山道走行はおすすめしません。場所は地域単位で表示します。",
+      "address": "高知県吾川郡いの町・UFOライン周辺（地域単位で表示）",
+      "mapSearchQuery": "高知県 いの町 UFOライン",
+      "regionOnly": true,
+      "sources": [
+        [
+          "林野庁 四国森林管理局",
+          "https://www.rinya.maff.go.jp/shikoku/reihoku/kokuyurin_shokai/250122.html"
+        ]
+      ],
+      "featured": true
+    },
+    {
+      "id": "matsushiro-luminous",
+      "name": "松代群発地震の発光現象",
+      "pref": "長野県",
+      "city": "長野市松代町",
+      "kind": "phenomenon",
+      "era": "1965〜66年の記録",
+      "status": "official",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "松代群発地震の時期に記録された山並みの発光現象。UFOと断定しない記録。",
+      "story": "1965〜66年の松代群発地震の際、地元の栗林亨氏が山並みの発光を撮影しました。気象庁資料によると、1966年9月26日未明には奇妙山一帯で白い光の帯が約96秒続いたとされています。地震との関係は確かめられておらず、UFOの目撃記録として扱いません。",
+      "access": "特定の観覧場所はありません。松代町の地域情報として紹介し、現場を特定する地図ピンは置きません。",
+      "address": "長野県長野市松代町（地域単位で表示）",
+      "mapSearchQuery": "長野県 長野市 松代町",
+      "regionOnly": true,
+      "sources": [
+        [
+          "気象庁・松代群発地震関連資料",
+          "https://www.jma.go.jp/jma/kishou/know/jishin/matsushiro/mat50/disaster/luminous.html"
+        ]
+      ]
+    }
+  ],
+  "people": [
+    {
+      "id": "mikami",
+      "name": "三上丈晴",
+      "kana": "みかみ たけはる",
+      "role": "研究者・観測イベント主催",
+      "area": "福島県",
+      "initial": "三",
+      "color": "violet",
+      "bio": "月刊『ムー』編集長。国際未確認飛行物体研究所の初代所長として、千貫森での観測ツアーなどに関わっています。",
+      "record": "千貫森でのUFO探索ツアー（2025・2026年に告知あり）",
+      "contactLabel": "研究所の公式お問い合わせ",
+      "contactUrl": "https://ufo-laboratory.com/contact/",
+      "sourceLabel": "研究所の活動案内",
+      "sourceUrl": "https://ufo-laboratory.com/",
+      "note": "本人への直接依頼ではなく、研究所の公開窓口です。"
+    },
+    {
+      "id": "kusaka",
+      "name": "日下慶太",
+      "kana": "くさか けいた",
+      "role": "UFOコンタクティ・観測会主催",
+      "area": "大阪府／全国",
+      "initial": "日",
+      "color": "cyan",
+      "bio": "コピーライター・写真家。「U活」と呼ぶ観測活動やUFOを呼ぶという音楽活動を展開。青森県大黒森山での観測会が取材されています。",
+      "record": "大黒森山の観測会（2025年）、バンド「エンバーン」の各地での活動",
+      "contactLabel": "本人公式サイトのお問い合わせ",
+      "contactUrl": "https://keitata.com/contact/",
+      "sourceLabel": "本人の活動ページ",
+      "sourceUrl": "https://keitata.com/ufo/",
+      "note": "本人サイトに「召喚確率66%超」という自己申告がありますが、独立した科学的検証値ではありません。"
+    },
+    {
+      "id": "mura",
+      "name": "武良信行",
+      "kana": "むら のぶゆき",
+      "role": "UFOコンタクティ・撮影家",
+      "area": "関西／全国",
+      "initial": "武",
+      "color": "amber",
+      "bio": "「UFOおじさん」として知られ、銚子・道頓堀・東京の公開イベントなどでUFO撮影会に参加してきました。",
+      "record": "銚子の召喚イベント（2016年）、道頓堀撮影会（2023年）",
+      "contactLabel": "日本UFO協会イベント事務局",
+      "contactUrl": "mailto:dj.kyoukaipg@gmail.com?subject=UFO%E6%92%AE%E5%BD%B1%E4%BC%9A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6",
+      "sourceLabel": "2023年撮影会の報道",
+      "sourceUrl": "https://www.nikkansports.com/general/nikkan/news/202306240001204.html",
+      "note": "このメールはイベント主催団体の公開連絡先であり、本人直通ではありません。"
+    },
+    {
+      "id": "carro",
+      "name": "ミスターキャロ",
+      "kana": "ミスターキャロ",
+      "role": "UFOコンタクティ・団体代表",
+      "area": "大阪府",
+      "initial": "C",
+      "color": "rose",
+      "bio": "日本UFO協会の会長として、道頓堀などで開かれるUFO撮影会に関わっています。",
+      "record": "道頓堀UFO撮影会（2023年・2026年の案内を確認）",
+      "contactLabel": "日本UFO協会イベント事務局",
+      "contactUrl": "mailto:dj.kyoukaipg@gmail.com?subject=UFO%E6%92%AE%E5%BD%B1%E4%BC%9A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6",
+      "sourceLabel": "2026年イベント主催者情報",
+      "sourceUrl": "https://lp.p.pia.jp/event/leisure/469437/index.html",
+      "note": "撮影会の告知に記載された団体窓口です。今後の開催を保証するものではありません。"
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "label": "すべて"
+    },
+    {
+      "id": "observe",
+      "label": "目撃談のある場所"
+    },
+    {
+      "id": "event",
+      "label": "観測会・召喚"
+    },
+    {
+      "id": "case",
+      "label": "遭遇・事件"
+    },
+    {
+      "id": "legend",
+      "label": "都市伝説"
+    },
+    {
+      "id": "facility",
+      "label": "関連施設"
+    },
+    {
+      "id": "phenomenon",
+      "label": "発光現象の記録"
+    }
+  ]
+};

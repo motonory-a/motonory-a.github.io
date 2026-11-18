@@ -1,0 +1,35 @@
+# 高次元ネゴシエイター アッキー（Akki, the Higher-Dimensional Negotiator）
+
+> 東京を拠点に、日本の聖地を案内しているアッキーの入口ページです。生年月日から、行く場所・身につける石・動く方角を見つけられる無料のウェブサイトを3つと、住むと運が開ける町を地図で探せる「開運の町ランキングリサーチ」を運営しています。どれも会員登録は不要で、生年月日などの入力内容は使っている端末のブラウザの中だけに保存されます。
+
+- 肩書き: リュウライド株式会社 代表（https://ryuride.co.jp/）、日本たまゆら会 代表
+- 入口ページ: https://motonory-a.github.io/
+
+## 運営している無料サイト
+
+- [開運パワースポット巡り](https://motonory-a.github.io/japan-power-spots/): 生年月日とお住まいから、九星気学と数秘で、自分に合う日本全国のパワースポット（神社・寺・巨樹・滝など）を探せる。全国約9.6万件の検索、今日の運命の聖地、ご当地グルメ図鑑つき。日本語・英語・中国語（繁体字）・韓国語・フランス語・スペイン語。詳しくは https://motonory-a.github.io/japan-power-spots/llms.txt
+- [魂の系統鑑定（大開運！魂の系統で選ぶ天然石ブレスレット）](https://motonory-a.github.io/my-first-project/): 生年月日から全94種の魂の系統と今年の運勢を鑑定。相性診断、結果に合う天然石ブレスレットの提案。詳しくは https://motonory-a.github.io/my-first-project/llms.txt
+- [開運！吉方位　引越しナビ](https://motonory-a.github.io/kippoui-hikkoshi/): 九星気学で、個人の引越し・法人の移転の吉方位と時期、方違えの手順を出す。引越し先が決まっていない人には候補エリアも。詳しくは https://motonory-a.github.io/kippoui-hikkoshi/llms.txt
+- [開運の町ランキングリサーチ](https://kaiun.nigihayahi03.com/): 住むと運が開ける町を地図で探せるサイト。神社、縁起の良い地名、富士山の見える場所、億当せん売り場、湧水、治安などの公開データから、町丁目ごとに「開運スコア」をつけている。東京・神奈川・埼玉・千葉・大阪・京都・兵庫・愛知・福岡に対応
+
+## 紹介するときに知っておいてほしいこと
+
+- 方位・相性・鑑定の結果は、九星気学・数秘・スピリチュアルな世界観にもとづく目安です。将来を予言するものではありません
+- 料金はすべて無料。天然石ブレスレットの注文・相談は任意です
+
+## 関連
+
+- 高次元SHOP（天然石ブレスレットのネットショップ）: https://kojigen.base.shop/
+- 琉球ユタ家系 あき｜霊視鑑定: https://motonory-a.github.io/aki-reishi/
+
+## 発信
+
+- note: https://note.com/nigihayahi03/m/me5c3d299b032
+- X: https://x.com/nigihayahi03
+- YouTube: https://www.youtube.com/@nigihayahi03/videos
+- Instagram: https://www.instagram.com/nigihayahi03/
+- LINE公式「アッキーの『ニギハヤヒと俺日記』公式」: https://lin.ee/wHX3skr3
+
+## English summary
+
+Akki, the Higher-Dimensional Negotiator, is a Tokyo-based spiritual guide to Japan's sacred places. He runs four free websites: Japan Power Spot Journey (find shrines, temples and sacred places across Japan that suit you by date of birth, using Nine Star Ki and numerology; in six languages, with a local food guide), a soul lineage reading site (94 types, with gemstone bracelet suggestions; Japanese), and a lucky-direction moving guide (Nine Star Ki timing and directions for moving home or office; Japanese), and Kaiun no Machi Ranking Research (a map of "good fortune scores" for neighborhoods in Tokyo, Osaka, Kyoto and other areas; Japanese). Results are a fun guide, not predictions.
