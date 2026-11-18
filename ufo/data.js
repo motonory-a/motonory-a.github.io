@@ -1,4 +1,4 @@
-// 非公開プレビュー用。元の19件と人物4件を保持し、既存5件追記＋新規2件。
+// 日本全国UFOミステリーマップ データ（2026-11-18 更新：32件）
 window.UFO_DATA = {
   "reviewedAt": "2026-11-18",
   "spots": [
@@ -528,6 +528,302 @@ window.UFO_DATA = {
         [
           "気象庁・松代群発地震関連資料",
           "https://www.jma.go.jp/jma/kishou/know/jishin/matsushiro/mat50/disaster/luminous.html"
+        ]
+      ]
+    },
+    {
+      "id": "sendai-balloon-2020",
+      "name": "仙台上空の白い球体（2020年）",
+      "pref": "宮城県",
+      "city": "仙台市ほか（岩手・宮城・福島）",
+      "kind": "observe",
+      "era": "2020年6月16〜17日",
+      "status": "press",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "十字の機器を下げた白い球体が、仙台の空にほぼ止まったまま浮かび続けた。持ち主は今も不明。",
+      "story": "2020年6月16日から17日にかけて、東北地方の上空で白い気球のような物体がほぼ静止したまま長時間浮かんでいるのが目撃されました。下には十字形の機器が付いていました。飛行計画の届け出はなく、持ち主や目的は分かっていません。仙台市天文台は鮮明な画像を公開しています。宇宙船だと示す材料はなく、気球の一種とみる見方が一般的です。",
+      "access": "上空の出来事で、決まった観覧場所はありません。場所は地域単位で表示します。",
+      "address": "宮城県仙台市周辺（地域単位で表示）",
+      "mapSearchQuery": "宮城県 仙台市",
+      "regionOnly": true,
+      "sources": [
+        [
+          "乗りものニュース",
+          "https://trafficnews.jp/post/97830"
+        ],
+        [
+          "ねとらぼ",
+          "https://nlab.itmedia.co.jp/research/articles/30125/"
+        ],
+        [
+          "The Japan Times",
+          "https://japantimes.co.jp/news/2020/06/17/national/mysterious-balloon-like-object-spotted-above-sendai"
+        ]
+      ]
+    },
+    {
+      "id": "hachinohe-sphere-2021",
+      "name": "八戸・鮫町上空の白い球体（2021年）",
+      "pref": "青森県",
+      "city": "八戸市鮫町",
+      "kind": "observe",
+      "era": "2021年9月3日",
+      "status": "press",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "日の出を見に来た海岸で、雲より高い所に止まる白い球体。気象台も「正体は分からない」。",
+      "story": "2021年9月3日の午前5時35分ごろ、八戸市鮫町の海岸近くにいた住民が、雲より高い位置にとどまる白い球体を目撃しました。仙台管区気象台は「正体は分からない」としたうえで、気象庁の観測機器である可能性はほぼないと説明しています。前年に仙台で見られた白い球体との似かよりも話題になりました。",
+      "access": "目撃されたのは鮫町の海岸付近の上空です。海岸に行く場合は足元と天候に注意してください。場所は地域単位で表示します。",
+      "address": "青森県八戸市鮫町（地域単位で表示）",
+      "mapSearchQuery": "青森県 八戸市 鮫町",
+      "regionOnly": true,
+      "sources": [
+        [
+          "東京スポーツ",
+          "https://www.tokyo-sports.co.jp/articles/-/84747"
+        ]
+      ]
+    },
+    {
+      "id": "yoshidaura-utsuro-1698",
+      "name": "吉田浦のウツホ舟（1698年の記録）",
+      "pref": "愛知県",
+      "city": "豊橋市（旧 三河国渥美郡吉田浦）",
+      "kind": "legend",
+      "era": "元禄11年（1698年）5月",
+      "status": "official",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "茨城のうつろ舟より約100年前、三河の浦にも「ウツホ舟」が着いたという記録がある。",
+      "story": "国立公文書館が紹介する『改正甘露叢』には、元禄11年（1698年）5月、三河国渥美郡吉田浦に「ウツホ舟」が着いたと書かれています。舟の中には女性が一人いて言葉が通じず、長崎へ送られたとされます。UFOの記録として書かれたものではありませんが、常陸国のうつろ舟伝説とくらべる資料として知られています。",
+      "access": "着いた浦の正確な場所は分かっていません。原資料は国立公文書館の所蔵です。場所は地域単位で表示します。",
+      "address": "愛知県豊橋市周辺（地域単位で表示）",
+      "mapSearchQuery": "愛知県 豊橋市",
+      "regionOnly": true,
+      "sources": [
+        [
+          "国立公文書館・デジタル展示",
+          "https://www.archives.go.jp/exhibition/digital/hyoryu/contents/12.html"
+        ]
+      ]
+    },
+    {
+      "id": "setouchi-toa-1965",
+      "name": "瀬戸内海上空・旅客機と緑の光（1965年）",
+      "pref": "香川県",
+      "city": "高松市沖（瀬戸内海上空）",
+      "kind": "observe",
+      "era": "1965年3月18日",
+      "status": "archive",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "高松沖を飛ぶ旅客機に、緑色に光る物体が近づき並んで飛んだ。別の小型機の操縦士も無線で報告。",
+      "story": "1965年3月18日の夜、高松沖の瀬戸内海上空を飛んでいた東亜航空の旅客機の機長が、緑色に光る物体に近づかれ、しばらく並んで飛ばれたと報告しました。直後には別の小型機の操縦士も高松の管制塔に無線で知らせたとされます。2人の操縦士による報告として、海外の研究サイトや国内の事件資料に記録されています。当時の新聞の原紙はまだ確認できていません。",
+      "access": "上空の出来事で、観覧場所はありません。場所は地域単位で表示します。",
+      "address": "香川県高松市沖（地域単位で表示）",
+      "mapSearchQuery": "香川県 高松市",
+      "regionOnly": true,
+      "sources": [
+        [
+          "Patrick Grossの事件記録",
+          "https://ufologie.patrickgross.org/htm/ja5131.htm"
+        ],
+        [
+          "日本のUFO遭遇事件",
+          "http://www.fureai.or.jp/~oomiya/UFO_d1.html"
+        ]
+      ]
+    },
+    {
+      "id": "genkai-lights-2025",
+      "name": "玄海原発上空の謎の光（2025年）",
+      "pref": "佐賀県",
+      "city": "東松浦郡玄海町",
+      "kind": "observe",
+      "era": "2025年7月26日",
+      "status": "press",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "警備員と県警が確認した3つの光が、原発の上空を約2時間飛び続けた。正体は今も分かっていない。",
+      "story": "2025年7月26日の午後9時ごろ、九州電力玄海原子力発電所の正門守衛所付近で、警備員4人が光る3つの飛行体を目撃しました。佐賀県警の部隊も確認し、光は約2時間にわたって敷地のまわりを飛び続けたとされます。九州電力は原子力規制庁などに通報し、「核物質防護情報」として初めての通報例になりました。航空機の見間違い説も出ていますが、正体は確定していません。",
+      "access": "原発の敷地には入れません。見に行けない地点として紹介しています。場所は地域単位で表示します。",
+      "address": "佐賀県東松浦郡玄海町（地域単位で表示）",
+      "mapSearchQuery": "佐賀県 玄海町",
+      "regionOnly": true,
+      "sources": [
+        [
+          "現代ビジネス（前編）",
+          "https://gendai.media/articles/-/162096"
+        ],
+        [
+          "現代ビジネス（後編）",
+          "https://gendai.media/articles/-/162097"
+        ]
+      ]
+    },
+    {
+      "id": "kumamoto-flares-2022",
+      "name": "熊本の夜空の光（正体は照明弾）",
+      "pref": "熊本県",
+      "city": "上益城郡山都町方面",
+      "kind": "observe",
+      "era": "2022年3月29日",
+      "status": "press",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "「UFOか」とSNSで話題になった縦に並ぶ光。陸上自衛隊の照明弾の訓練だった。",
+      "story": "2022年3月29日の午後6時25分ごろ、熊本市東区から東の空に白い光が縦に並んで見える動画が撮られ、SNSで話題になりました。熊本日日新聞の取材に陸上自衛隊が答え、当時は大矢野原演習場で照明弾の射撃訓練をしていたことが分かりました。不思議な光にも身近な正体があることを教えてくれる例です。",
+      "access": "演習場には入れません。場所は地域単位で表示します。",
+      "address": "熊本県上益城郡山都町方面（地域単位で表示）",
+      "mapSearchQuery": "熊本県 山都町",
+      "regionOnly": true,
+      "sources": [
+        [
+          "熊本日日新聞",
+          "https://kumanichi.com/articles/607783"
+        ]
+      ]
+    },
+    {
+      "id": "naha-orange-2014",
+      "name": "那覇上空のオレンジ色の光（2014年）",
+      "pref": "沖縄県",
+      "city": "那覇市",
+      "kind": "observe",
+      "era": "2014年1月23日",
+      "status": "press",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "約10個のオレンジ色の光が那覇の空を漂い、一列に並んで止まった。沖縄タイムスが動画を公開。",
+      "story": "2014年1月23日の午後9時ごろ、那覇市の上空に約10個のオレンジ色の光が漂い、やがて県庁の上空と思われる場所で一列に並んで止まりました。見つけてから消えるまで約15分で、沖縄タイムスの職員が撮影した動画が公開されました。専門家は天文現象とは考えにくいと話していますが、正体は分かっていません。",
+      "access": "那覇市街の上空での出来事です。場所は地域単位で表示します。",
+      "address": "沖縄県那覇市（地域単位で表示）",
+      "mapSearchQuery": "沖縄県 那覇市",
+      "regionOnly": true,
+      "sources": [
+        [
+          "J-CASTニュース",
+          "https://www.j-cast.com/2014/01/27195183.html"
+        ]
+      ]
+    },
+    {
+      "id": "hakui-station",
+      "name": "羽咋駅・UFOのまちの玄関口",
+      "pref": "石川県",
+      "city": "羽咋市",
+      "kind": "facility",
+      "era": "UFOのまちの入口",
+      "status": "press",
+      "visit": "public",
+      "lat": null,
+      "lng": null,
+      "lead": "駅のホームから宇宙人が出迎える「UFOのまち」の玄関口。コスモアイル羽咋への出発点にも。",
+      "story": "羽咋駅では、ホームや駅舎の宇宙人やUFOの絵が「UFOのまちへようこそ」と出迎えてくれます。羽咋に伝わる「そうはちぼん」の伝説と、UFOによる町おこしから生まれた光景です。コスモアイル羽咋や、そうはちぼん伝説のページとあわせてめぐるのがおすすめです。",
+      "access": "JR七尾線 羽咋駅。駅の利用時間は運行ダイヤに合わせてご確認ください。",
+      "address": "石川県羽咋市（羽咋駅）",
+      "mapSearchQuery": "羽咋駅",
+      "regionOnly": true,
+      "sources": [
+        [
+          "文春オンライン",
+          "https://bunshun.jp/articles/-/62957"
+        ],
+        [
+          "未知の細道（ドラぷら）",
+          "https://www.driveplaza.com/trip/michinohosomichi/ver294/04.html"
+        ]
+      ]
+    },
+    {
+      "id": "haneda-1952",
+      "name": "羽田上空の光とレーダー（1952年）",
+      "pref": "東京都",
+      "city": "大田区（羽田空港）",
+      "kind": "observe",
+      "era": "1952年8月5〜6日",
+      "status": "archive",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "米軍の管制塔が約1時間見守った東京湾上空の光。レーダーも捉え、迎撃機が飛び立った。",
+      "story": "1952年8月5日の深夜、当時の羽田空軍基地（今の羽田空港）で、管制塔の要員が東京湾上空の明るい光を約1時間観察しました。地上のレーダーも目標を捉え、迎撃機F-94が発進して機上レーダーで約90秒追ったと、米空軍の報告書に記録されています。のちの米国の調査報告は、星の見間違いとレーダーの異常による説明を示しましたが、評価は研究者の間で分かれています。",
+      "access": "空港ターミナルや展望デッキは営業時間内に利用できます。現場は東京湾の上空です。場所は地域単位で表示します。",
+      "address": "東京都大田区羽田空港周辺（地域単位で表示）",
+      "mapSearchQuery": "羽田空港",
+      "regionOnly": true,
+      "sources": [
+        [
+          "Patrick Grossの事件記録",
+          "https://ufologie.patrickgross.org/htm/haneda.htm"
+        ],
+        [
+          "米空軍報告の資料",
+          "https://ufology.patrickgross.org/htm/hanedausafp3435.htm"
+        ],
+        [
+          "コンドン報告の該当部分",
+          "https://ufology.patrickgross.org/htm/hanedacondon.htm"
+        ]
+      ]
+    },
+    {
+      "id": "shizuoka-kite",
+      "name": "静岡の空に浮かんだ謎の物体（正体は凧）",
+      "pref": "静岡県",
+      "city": "静岡市・藤枝市",
+      "kind": "observe",
+      "era": "2020年代",
+      "status": "press",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "静岡市と藤枝市の空に浮かぶ謎の物体。新聞社が調べると、海岸で揚げた凧だった。",
+      "story": "静岡県立美術館の近くや藤枝市の蓮華寺池公園の上空で、浮かぶ謎の物体が目撃され、静岡新聞の読者投稿企画が調べました。大浜海岸で凧を揚げていた人の話から、正体は凧と分かりました。見慣れない物が空にあっても、まずは身近な説明を探してみることの大切さが分かる例です。",
+      "access": "上空の出来事です。場所は地域単位で表示します。",
+      "address": "静岡県静岡市・藤枝市（地域単位で表示）",
+      "mapSearchQuery": "静岡県 静岡市",
+      "regionOnly": true,
+      "sources": [
+        [
+          "あなたの静岡新聞（1）",
+          "https://www.at-s.com/life/article/ats/1249333.html"
+        ],
+        [
+          "あなたの静岡新聞（2）",
+          "https://www.at-s.com/life/article/ats/1277882.html"
+        ]
+      ]
+    },
+    {
+      "id": "kaiyo-haps-2026",
+      "name": "海陽町上空の銀色の球（正体は空飛ぶ基地局）",
+      "pref": "徳島県",
+      "city": "海部郡海陽町",
+      "kind": "observe",
+      "era": "2026年8月",
+      "status": "press",
+      "visit": "area",
+      "lat": null,
+      "lng": null,
+      "lead": "南の空に止まって見えた銀色の球。望遠鏡で確かめると、試験中の空飛ぶ基地局だった。",
+      "story": "海陽町などの上空で、銀色に光る丸い物体が静止しているのが目撃されました。不安に思った住民が天体好きの知人に相談し、望遠鏡で見ると飛行船のような形と分かりました。ソフトバンクは徳島新聞の取材に、試験運用中の空飛ぶ基地局「HAPS」だと認めています。",
+      "access": "上空の出来事です。場所は地域単位で表示します。",
+      "address": "徳島県海部郡海陽町（地域単位で表示）",
+      "mapSearchQuery": "徳島県 海陽町",
+      "regionOnly": true,
+      "sources": [
+        [
+          "徳島新聞（Yahoo!ニュース）",
+          "https://news.yahoo.co.jp/articles/6f3e03c826974558dfcdea3c201569184cbe2629"
         ]
       ]
     }
