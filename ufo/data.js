@@ -499,6 +499,7 @@ window.UFO_DATA = {
       "address": "高知県吾川郡いの町・UFOライン周辺（地域単位で表示）",
       "mapSearchQuery": "高知県 いの町 UFOライン",
       "regionOnly": true,
+      "area": {"lat": 33.815, "lng": 133.24, "radiusKm": 10},
       "sources": [
         [
           "林野庁 四国森林管理局",
@@ -524,6 +525,7 @@ window.UFO_DATA = {
       "address": "長野県長野市松代町（地域単位で表示）",
       "mapSearchQuery": "長野県 長野市 松代町",
       "regionOnly": true,
+      "area": {"lat": 36.565, "lng": 138.195, "radiusKm": 5},
       "sources": [
         [
           "気象庁・松代群発地震関連資料",
@@ -548,6 +550,7 @@ window.UFO_DATA = {
       "address": "宮城県仙台市周辺（地域単位で表示）",
       "mapSearchQuery": "宮城県 仙台市",
       "regionOnly": true,
+      "area": {"lat": 38.268, "lng": 140.87, "radiusKm": 15},
       "sources": [
         [
           "乗りものニュース",
@@ -580,6 +583,7 @@ window.UFO_DATA = {
       "address": "青森県八戸市鮫町（地域単位で表示）",
       "mapSearchQuery": "青森県 八戸市 鮫町",
       "regionOnly": true,
+      "area": {"lat": 40.54, "lng": 141.56, "radiusKm": 4},
       "sources": [
         [
           "東京スポーツ",
@@ -604,6 +608,7 @@ window.UFO_DATA = {
       "address": "愛知県豊橋市周辺（地域単位で表示）",
       "mapSearchQuery": "愛知県 豊橋市",
       "regionOnly": true,
+      "area": {"lat": 34.769, "lng": 137.391, "radiusKm": 8},
       "sources": [
         [
           "国立公文書館・デジタル展示",
@@ -628,6 +633,7 @@ window.UFO_DATA = {
       "address": "香川県高松市沖（地域単位で表示）",
       "mapSearchQuery": "香川県 高松市",
       "regionOnly": true,
+      "area": {"lat": 34.4, "lng": 134.05, "radiusKm": 12},
       "sources": [
         [
           "Patrick Grossの事件記録",
@@ -656,6 +662,7 @@ window.UFO_DATA = {
       "address": "佐賀県東松浦郡玄海町（地域単位で表示）",
       "mapSearchQuery": "佐賀県 玄海町",
       "regionOnly": true,
+      "area": {"lat": 33.515, "lng": 129.837, "radiusKm": 3},
       "sources": [
         [
           "現代ビジネス（前編）",
@@ -684,6 +691,7 @@ window.UFO_DATA = {
       "address": "熊本県上益城郡山都町方面（地域単位で表示）",
       "mapSearchQuery": "熊本県 山都町",
       "regionOnly": true,
+      "area": {"lat": 32.7, "lng": 131.05, "radiusKm": 8},
       "sources": [
         [
           "熊本日日新聞",
@@ -708,6 +716,7 @@ window.UFO_DATA = {
       "address": "沖縄県那覇市（地域単位で表示）",
       "mapSearchQuery": "沖縄県 那覇市",
       "regionOnly": true,
+      "area": {"lat": 26.212, "lng": 127.679, "radiusKm": 4},
       "sources": [
         [
           "J-CASTニュース",
@@ -732,6 +741,7 @@ window.UFO_DATA = {
       "address": "石川県羽咋市（羽咋駅）",
       "mapSearchQuery": "羽咋駅",
       "regionOnly": true,
+      "area": {"lat": 36.893, "lng": 136.778, "radiusKm": 1},
       "sources": [
         [
           "文春オンライン",
@@ -760,6 +770,7 @@ window.UFO_DATA = {
       "address": "東京都大田区羽田空港周辺（地域単位で表示）",
       "mapSearchQuery": "羽田空港",
       "regionOnly": true,
+      "area": {"lat": 35.549, "lng": 139.78, "radiusKm": 8},
       "sources": [
         [
           "Patrick Grossの事件記録",
@@ -792,6 +803,7 @@ window.UFO_DATA = {
       "address": "静岡県静岡市・藤枝市（地域単位で表示）",
       "mapSearchQuery": "静岡県 静岡市",
       "regionOnly": true,
+      "area": {"lat": 34.97, "lng": 138.4, "radiusKm": 12},
       "sources": [
         [
           "あなたの静岡新聞（1）",
@@ -820,6 +832,7 @@ window.UFO_DATA = {
       "address": "徳島県海部郡海陽町（地域単位で表示）",
       "mapSearchQuery": "徳島県 海陽町",
       "regionOnly": true,
+      "area": {"lat": 33.6, "lng": 134.35, "radiusKm": 8},
       "sources": [
         [
           "徳島新聞（Yahoo!ニュース）",
@@ -844,6 +857,7 @@ window.UFO_DATA = {
       "address": "東京都渋谷区（地域単位で表示）",
       "mapSearchQuery": "明治神宮",
       "regionOnly": true,
+      "area": {"lat": 35.676, "lng": 139.699, "radiusKm": 1.5},
       "sources": [
         [
           "英語記事（転載）",
@@ -868,6 +882,7 @@ window.UFO_DATA = {
       "address": "北海道 根室海峡付近（地域単位で表示）",
       "mapSearchQuery": "北海道 根室市",
       "regionOnly": true,
+      "area": {"lat": 43.6, "lng": 145.4, "radiusKm": 20},
       "sources": [
         [
           "日本のUFO遭遇事件（まとめサイト）",
@@ -892,6 +907,7 @@ window.UFO_DATA = {
       "address": "沖縄県南城市（地域単位で表示）",
       "mapSearchQuery": "百名ビーチ",
       "regionOnly": true,
+      "area": {"lat": 26.15, "lng": 127.786, "radiusKm": 3},
       "sources": [
         [
           "Bastille Post（地元紙の引用）",
@@ -916,6 +932,7 @@ window.UFO_DATA = {
       "address": "秋田県秋田市雄和（地域単位で表示）",
       "mapSearchQuery": "秋田空港",
       "regionOnly": true,
+      "area": {"lat": 39.616, "lng": 140.219, "radiusKm": 3},
       "sources": [
         [
           "UFO研究ブログ（再検証）",
@@ -940,6 +957,7 @@ window.UFO_DATA = {
       "address": "栃木県宇都宮市（地域単位で表示）",
       "mapSearchQuery": "栃木県 宇都宮市",
       "regionOnly": true,
+      "area": {"lat": 36.555, "lng": 139.883, "radiusKm": 12},
       "sources": [
         [
           "UFO事件簿（個人ブログ）",
@@ -964,6 +982,7 @@ window.UFO_DATA = {
       "address": "新潟県佐渡市（地域単位で表示）",
       "mapSearchQuery": "新潟県 佐渡市",
       "regionOnly": true,
+      "area": {"lat": 38.02, "lng": 138.37, "radiusKm": 20},
       "sources": [
         [
           "東京スポーツ（2026年）",
@@ -992,6 +1011,7 @@ window.UFO_DATA = {
       "address": "徳島県 剣山（地域単位で表示）",
       "mapSearchQuery": "剣山",
       "regionOnly": true,
+      "area": {"lat": 33.854, "lng": 134.094, "radiusKm": 3},
       "sources": [
         [
           "徳島新聞（山小屋スタッフの連載）",
@@ -1016,6 +1036,7 @@ window.UFO_DATA = {
       "address": "岐阜県高山市一之宮町（地域単位で表示）",
       "mapSearchQuery": "位山",
       "regionOnly": true,
+      "area": {"lat": 36.08, "lng": 137.19, "radiusKm": 4},
       "sources": [
         [
           "創楽（個人の登山サイト）",
@@ -1044,6 +1065,7 @@ window.UFO_DATA = {
       "address": "奈良県橿原市白橿町（地域単位で表示）",
       "mapSearchQuery": "益田岩船",
       "regionOnly": true,
+      "area": {"lat": 34.477, "lng": 135.783, "radiusKm": 1},
       "sources": [
         [
           "関西ウォーカー",

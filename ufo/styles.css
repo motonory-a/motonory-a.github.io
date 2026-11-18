@@ -47,3 +47,8 @@
 @media(max-width:760px){.section h2{font-size:clamp(18px,4.9vw,24px);letter-spacing:.02em}}
 /* うわさ・真偽不明（2026-11-19） */
 .source-badge[data-status=unverified]{color:#ffe0b0;background:#5a3a14;border:1px dashed #ffbf66}
+/* 地図の目安表示（2026-11-19） */
+.map-panel{margin-bottom:20px}
+.legend-pin{color:var(--gold)}
+.legend-area{display:inline-block;width:16px;height:16px;border:2px dashed #ffd98a;border-radius:50%;background:rgba(154,67,248,.25);vertical-align:-3px;margin-left:8px}
+.ufo-pin.area-pin{opacity:.9;border-style:dashed}

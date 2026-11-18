@@ -7,7 +7,7 @@
   const categoryMap = Object.fromEntries(dataset.categories.map(x => [x.id,x.label]));
   const statusMap = {official:'自治体・公式の記録',press:'取材・報道あり',archive:'民間資料・研究記録',unverified:'真偽不明（あやしい話）'};
   const kindSymbols = {observe:'✦',event:'◉',case:'◈',legend:'◇',facility:'⌂',phenomenon:'✧',rumor:'？'};
-  const state = {category:'all',search:'',visitOnly:false,view:'list',userLocation:null};
+  const state = {category:'all',search:'',visitOnly:false,view:'map',userLocation:null};
   let map = null;
   let markers = null;
 
@@ -30,7 +30,7 @@
     return result;
   }
 
-  function distance(origin,spot){if(!hasCoordinates(spot))return Infinity;const rad=Math.PI/180;const dlat=(spot.lat-origin.lat)*rad;const dlng=(spot.lng-origin.lng)*rad;const t=Math.sin(dlat/2)**2+Math.cos(origin.lat*rad)*Math.cos(spot.lat*rad)*Math.sin(dlng/2)**2;return 6371*2*Math.atan2(Math.sqrt(t),Math.sqrt(1-t))}
+  function distance(origin,spot){if(!hasCoordinates(spot)){if(!spot.area)return Infinity;spot={lat:spot.area.lat,lng:spot.area.lng}}const rad=Math.PI/180;const dlat=(spot.lat-origin.lat)*rad;const dlng=(spot.lng-origin.lng)*rad;const t=Math.sin(dlat/2)**2+Math.cos(origin.lat*rad)*Math.cos(spot.lat*rad)*Math.sin(dlng/2)**2;return 6371*2*Math.atan2(Math.sqrt(t),Math.sqrt(1-t))}
 
   function renderCategories(){
     $('#filter-chips').innerHTML=dataset.categories.map(c=>`<button class="chip ${state.category===c.id?'is-active':''}" type="button" data-category="${c.id}" aria-pressed="${state.category===c.id}">${escapeHtml(c.label)}</button>`).join('');
@@ -48,7 +48,7 @@
     $('#spot-count').textContent=String(spots.length).padStart(2,'0');
     $('#result-count').textContent=`${filtered.length}件を表示中${state.userLocation?' ／ 現在地に近い順':''}`;
     $('#spot-list').innerHTML=filtered.length?filtered.map(renderSpotCard).join(''):'<div class="empty-state"><b>一致するスポットがありません</b>検索語やジャンルを変えてみてください。</div>';
-    $('#spot-list').hidden=state.view==='map';
+    $('#spot-list').hidden=false;
     $('#spot-map-wrapper').hidden=state.view!=='map';
     $('#list-button').classList.toggle('is-active',state.view==='list');
     $('#map-button').classList.toggle('is-active',state.view==='map');
@@ -58,7 +58,7 @@
   }
 
   function renderRegionOnly(visible){
-    const areaSpots=visible.filter(spot=>!hasCoordinates(spot));
+    const areaSpots=visible.filter(spot=>!hasCoordinates(spot)&&!spot.area);
     $('#map-region-list').innerHTML=areaSpots.length
       ? `<div class="region-panel"><h3>⌖ 地域単位で表示するスポット（${areaSpots.length}件）</h3><p>正確な地点を確認していないため、地図上にピンは置いていません。</p><div class="region-cards">${areaSpots.map(spot=>`<article class="region-card"><strong>${escapeHtml(spot.name)}</strong><span>${escapeHtml(spot.pref)} ${escapeHtml(spot.city)}</span><div><button type="button" data-open-spot="${escapeAttr(spot.id)}">詳細を見る</button>${openExternal(googleMapsUrl(spot),'Googleマップで地域を検索')}</div></article>`).join('')}</div></div>`
       : '';
@@ -79,7 +79,7 @@
     if(!window.L){
       $('#map-fallback').hidden=false;
       $('#spot-map').style.display='none';
-      renderOfflineMap(pinSpots);
+      renderOfflineMap(pinSpots.concat(visible.filter(s=>!hasCoordinates(s)&&s.area).map(s=>({...s,lat:s.area.lat,lng:s.area.lng}))));
       return;
     }
     $('#map-fallback').hidden=true;
@@ -96,6 +96,15 @@
       const marker=L.marker([spot.lat,spot.lng],{icon}).addTo(markers);
       marker.bindPopup(`<div class="map-popup"><h4>${escapeHtml(spot.name)}</h4><p>${escapeHtml(spot.pref)} ${escapeHtml(spot.city)}<br>位置は目安です</p><button type="button" data-open-spot="${escapeAttr(spot.id)}">詳細を見る ↗</button></div>`);
       bounds.push([spot.lat,spot.lng]);
+    });
+    visible.filter(spot=>!hasCoordinates(spot)&&spot.area).forEach(spot=>{
+      const a=spot.area;
+      const circle=L.circle([a.lat,a.lng],{radius:a.radiusKm*1000,color:'#ffd98a',weight:2,dashArray:'6 6',fillColor:'#9a43f8',fillOpacity:.18}).addTo(markers);
+      const icon=L.divIcon({html:`<div class="ufo-pin area-pin ${spot.kind}"><span>${kindSymbols[spot.kind]||'✦'}</span></div>`,className:'',iconSize:[24,24],iconAnchor:[12,12]});
+      const marker=L.marker([a.lat,a.lng],{icon}).addTo(markers);
+      const pop=`<div class="map-popup"><h4>${escapeHtml(spot.name)}</h4><p>${escapeHtml(spot.pref)} ${escapeHtml(spot.city)}<br>点線の円は「このあたり」の目安です。正確な場所ではありません。</p><button type="button" data-open-spot="${escapeAttr(spot.id)}">詳細を見る ↗</button></div>`;
+      marker.bindPopup(pop);circle.bindPopup(pop);
+      bounds.push([a.lat,a.lng]);
     });
     setTimeout(()=>{map.invalidateSize();if(bounds.length===1)map.setView(bounds[0],9);else if(bounds.length>1)map.fitBounds(bounds,{padding:[30,30],maxZoom:10})},100);
   }
