@@ -86,7 +86,7 @@
     $('#spot-map').style.display='block';
     if(!map){
       map=L.map('spot-map',{scrollWheelZoom:false}).setView([37.2,137.8],5);
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
       markers=L.layerGroup().addTo(map);
     }
     markers.clearLayers();
@@ -123,7 +123,7 @@
     $('#dialog-access').textContent=spot.access;
     $('#dialog-address').textContent=spot.address;
     $('#dialog-region-note').hidden=hasCoordinates(spot);
-    $('#dialog-region-note').textContent=hasCoordinates(spot)?'':'正確な位置を確認していないため、地図上にピンを置かず、地域単位で表示しています。';
+    $('#dialog-region-note').textContent=hasCoordinates(spot)?'':'正確な場所は確かめられていません。地図では点線の円で「このあたり」の目安を示しています。';
     $('#dialog-links').innerHTML=spot.sources.map(s=>openExternal(s[1],s[0])).join('')+`<a class="map-link" href="${escapeAttr(googleMapsUrl(spot))}" target="_blank" rel="noopener noreferrer">地図アプリで地域を確認 ↗</a>`;
     $('#spot-dialog').showModal();
   }

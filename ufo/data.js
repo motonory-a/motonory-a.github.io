@@ -1,4 +1,4 @@
-// 日本全国UFOミステリーマップ データ（2026-11-19 更新：41件・人物6件）
+// 日本全国UFOミステリーマップ データ（2026-11-19 更新：41件・人物6件・2026-11-19点検済み）
 window.UFO_DATA = {
   "reviewedAt": "2026-11-18",
   "spots": [
@@ -462,23 +462,27 @@ window.UFO_DATA = {
       "pref": "福島県",
       "city": "福島市飯野町",
       "kind": "event",
-      "era": "2025年11月8・9日（過去開催）",
+      "era": "2025年11月・2026年10〜11月（過去開催）",
       "status": "official",
       "visit": "public",
       "lat": 37.66,
       "lng": 140.533,
       "lead": "参加者約300人で呼びかけた際、謎の光を見たと研究所が報告。",
-      "story": "研究所による当事者発表です。映像の独立検証や正体の確定は行われていないため「目撃報告」として紹介します。 2025年11月8日には飯野町商店街、9日にはUFOふれあい館で開催。主催は飯野町まちづくり研究会と飯野町商工会です。",
-      "access": "【過去開催】2025年11月8・9日の催しは終了しています。次回開催日程は未確認です。",
+      "story": "研究所による当事者発表です。映像の独立検証や正体の確定は行われていないため「目撃報告」として紹介します。 2025年は11月8日に飯野町商店街、9日にUFOふれあい館で開催されました。2026年も10月31日に飯野町商店街で「UFOフェスティバル2026」、11月1日に千貫森ミステリーツアーが開かれています。",
+      "access": "【過去開催】2025年・2026年の催しは終了しています。次回の日程は国際未確認飛行物体研究所の告知で確認してください。",
       "address": "福島県福島市飯野町町43・飯野イベント広場",
       "sources": [
         [
           "国際未確認飛行物体研究所の報告",
-          "https://ufo-laboratory.com/news/ufo%E7%8F%BE%E3%82%8B%EF%BC%81%EF%BC%9F%E3%80%80%E8%AA%BF%E6%9F%BB%E6%9E%90%E3%81%AE%E3%81%9F%E3%82%81%E6%9B%B4%E3%81%AA%E3%82%8B%E6%83%85%E5%A0%B1%E6%B1%82%E3%82%80%E3%80%82/"
+          "https://ufo-laboratory.com/news/ufo%e7%8f%be%e3%82%8b%ef%bc%81%ef%bc%9f%e3%80%80%e8%aa%bf%e6%9f%bb%e5%88%86%e6%9e%90%e3%81%ae%e3%81%9f%e3%82%81%e6%9b%b4%e3%81%aa%e3%82%8b%e6%83%85%e5%a0%b1%e6%b1%82%e3%82%80%e3%80%82/"
         ],
         [
           "福島市・2025年開催資料",
           "https://www.city.fukushima.fukushima.jp/material/files/group/1/2025110601.pdf"
+        ],
+        [
+          "国際未確認飛行物体研究所（2026年の開催案内）",
+          "https://ufo-laboratory.com/news/ufo%e3%83%95%e3%82%a7%e3%82%b9%e3%83%86%e3%82%a3%e3%83%90%e3%83%ab2026%e9%96%8b%e5%82%ac%e6%b1%ba%e5%ae%9a%ef%bc%81%e3%80%9c%e5%ae%87%e5%ae%99%e4%ba%ba%e4%bb%ae%e8%a3%85%e3%83%91%e3%83%ac%e3%83%bc/"
         ]
       ]
     },
@@ -499,7 +503,11 @@ window.UFO_DATA = {
       "address": "高知県吾川郡いの町・UFOライン周辺（地域単位で表示）",
       "mapSearchQuery": "高知県 いの町 UFOライン",
       "regionOnly": true,
-      "area": {"lat": 33.815, "lng": 133.24, "radiusKm": 10},
+      "area": {
+        "lat": 33.815,
+        "lng": 133.24,
+        "radiusKm": 10
+      },
       "sources": [
         [
           "林野庁 四国森林管理局",
@@ -525,7 +533,11 @@ window.UFO_DATA = {
       "address": "長野県長野市松代町（地域単位で表示）",
       "mapSearchQuery": "長野県 長野市 松代町",
       "regionOnly": true,
-      "area": {"lat": 36.565, "lng": 138.195, "radiusKm": 5},
+      "area": {
+        "lat": 36.565,
+        "lng": 138.195,
+        "radiusKm": 5
+      },
       "sources": [
         [
           "気象庁・松代群発地震関連資料",
@@ -550,7 +562,11 @@ window.UFO_DATA = {
       "address": "宮城県仙台市周辺（地域単位で表示）",
       "mapSearchQuery": "宮城県 仙台市",
       "regionOnly": true,
-      "area": {"lat": 38.268, "lng": 140.87, "radiusKm": 15},
+      "area": {
+        "lat": 38.268,
+        "lng": 140.87,
+        "radiusKm": 15
+      },
       "sources": [
         [
           "乗りものニュース",
@@ -583,7 +599,11 @@ window.UFO_DATA = {
       "address": "青森県八戸市鮫町（地域単位で表示）",
       "mapSearchQuery": "青森県 八戸市 鮫町",
       "regionOnly": true,
-      "area": {"lat": 40.54, "lng": 141.56, "radiusKm": 4},
+      "area": {
+        "lat": 40.54,
+        "lng": 141.56,
+        "radiusKm": 4
+      },
       "sources": [
         [
           "東京スポーツ",
@@ -608,7 +628,11 @@ window.UFO_DATA = {
       "address": "愛知県豊橋市周辺（地域単位で表示）",
       "mapSearchQuery": "愛知県 豊橋市",
       "regionOnly": true,
-      "area": {"lat": 34.769, "lng": 137.391, "radiusKm": 8},
+      "area": {
+        "lat": 34.769,
+        "lng": 137.391,
+        "radiusKm": 8
+      },
       "sources": [
         [
           "国立公文書館・デジタル展示",
@@ -633,7 +657,11 @@ window.UFO_DATA = {
       "address": "香川県高松市沖（地域単位で表示）",
       "mapSearchQuery": "香川県 高松市",
       "regionOnly": true,
-      "area": {"lat": 34.4, "lng": 134.05, "radiusKm": 12},
+      "area": {
+        "lat": 34.4,
+        "lng": 134.05,
+        "radiusKm": 12
+      },
       "sources": [
         [
           "Patrick Grossの事件記録",
@@ -662,7 +690,11 @@ window.UFO_DATA = {
       "address": "佐賀県東松浦郡玄海町（地域単位で表示）",
       "mapSearchQuery": "佐賀県 玄海町",
       "regionOnly": true,
-      "area": {"lat": 33.515, "lng": 129.837, "radiusKm": 3},
+      "area": {
+        "lat": 33.515,
+        "lng": 129.837,
+        "radiusKm": 3
+      },
       "sources": [
         [
           "現代ビジネス（前編）",
@@ -691,7 +723,11 @@ window.UFO_DATA = {
       "address": "熊本県上益城郡山都町方面（地域単位で表示）",
       "mapSearchQuery": "熊本県 山都町",
       "regionOnly": true,
-      "area": {"lat": 32.7, "lng": 131.05, "radiusKm": 8},
+      "area": {
+        "lat": 32.7,
+        "lng": 131.05,
+        "radiusKm": 8
+      },
       "sources": [
         [
           "熊本日日新聞",
@@ -716,7 +752,11 @@ window.UFO_DATA = {
       "address": "沖縄県那覇市（地域単位で表示）",
       "mapSearchQuery": "沖縄県 那覇市",
       "regionOnly": true,
-      "area": {"lat": 26.212, "lng": 127.679, "radiusKm": 4},
+      "area": {
+        "lat": 26.212,
+        "lng": 127.679,
+        "radiusKm": 4
+      },
       "sources": [
         [
           "J-CASTニュース",
@@ -741,7 +781,11 @@ window.UFO_DATA = {
       "address": "石川県羽咋市（羽咋駅）",
       "mapSearchQuery": "羽咋駅",
       "regionOnly": true,
-      "area": {"lat": 36.893, "lng": 136.778, "radiusKm": 1},
+      "area": {
+        "lat": 36.893,
+        "lng": 136.778,
+        "radiusKm": 1
+      },
       "sources": [
         [
           "文春オンライン",
@@ -770,7 +814,11 @@ window.UFO_DATA = {
       "address": "東京都大田区羽田空港周辺（地域単位で表示）",
       "mapSearchQuery": "羽田空港",
       "regionOnly": true,
-      "area": {"lat": 35.549, "lng": 139.78, "radiusKm": 8},
+      "area": {
+        "lat": 35.549,
+        "lng": 139.78,
+        "radiusKm": 8
+      },
       "sources": [
         [
           "Patrick Grossの事件記録",
@@ -803,7 +851,11 @@ window.UFO_DATA = {
       "address": "静岡県静岡市・藤枝市（地域単位で表示）",
       "mapSearchQuery": "静岡県 静岡市",
       "regionOnly": true,
-      "area": {"lat": 34.97, "lng": 138.4, "radiusKm": 12},
+      "area": {
+        "lat": 34.97,
+        "lng": 138.4,
+        "radiusKm": 12
+      },
       "sources": [
         [
           "あなたの静岡新聞（1）",
@@ -832,7 +884,11 @@ window.UFO_DATA = {
       "address": "徳島県海部郡海陽町（地域単位で表示）",
       "mapSearchQuery": "徳島県 海陽町",
       "regionOnly": true,
-      "area": {"lat": 33.6, "lng": 134.35, "radiusKm": 8},
+      "area": {
+        "lat": 33.6,
+        "lng": 134.35,
+        "radiusKm": 8
+      },
       "sources": [
         [
           "徳島新聞（Yahoo!ニュース）",
@@ -857,7 +913,11 @@ window.UFO_DATA = {
       "address": "東京都渋谷区（地域単位で表示）",
       "mapSearchQuery": "明治神宮",
       "regionOnly": true,
-      "area": {"lat": 35.676, "lng": 139.699, "radiusKm": 1.5},
+      "area": {
+        "lat": 35.676,
+        "lng": 139.699,
+        "radiusKm": 1.5
+      },
       "sources": [
         [
           "英語記事（転載）",
@@ -882,7 +942,11 @@ window.UFO_DATA = {
       "address": "北海道 根室海峡付近（地域単位で表示）",
       "mapSearchQuery": "北海道 根室市",
       "regionOnly": true,
-      "area": {"lat": 43.6, "lng": 145.4, "radiusKm": 20},
+      "area": {
+        "lat": 43.6,
+        "lng": 145.4,
+        "radiusKm": 20
+      },
       "sources": [
         [
           "日本のUFO遭遇事件（まとめサイト）",
@@ -892,26 +956,38 @@ window.UFO_DATA = {
     },
     {
       "id": "hyakuna-lights-2026",
-      "name": "百名ビーチの空に光る物体（2026年）",
+      "name": "百名ビーチ東の空のオレンジ色の光（2026年）",
       "pref": "沖縄県",
       "city": "南城市",
-      "kind": "rumor",
-      "era": "2026年7月6日とされる",
-      "status": "unverified",
+      "kind": "observe",
+      "era": "2026年7月6日",
+      "status": "press",
       "visit": "area",
       "lat": null,
       "lng": null,
-      "lead": "強く光る物体が2つに分かれ、並んで東の空を動いたという目撃談。目撃者は1人。",
-      "story": "2026年7月6日の夜、南城市の百名ビーチで、東の空に強く光る物体が2つに分かれて並び、同じ方向へ移動しながら約20分見えたと伝えられています。地元紙の報道を引用した海外のニュースサイトで紹介されたもので、目撃者は1人です。専門家は大気現象やヘリコプターの可能性を挙げています。元の記事はまだ確認できていません。",
+      "lead": "百名ビーチの東の空で、激しく光る物体が2つに分かれて動いた。のちに照明弾の可能性が示された。",
+      "story": "2026年7月6日の午後7時30分ごろ、南城市の百名ビーチの東の空で、激しくオレンジ色に光る物体が見えたと沖縄タイムスが報じました。地元の人によると、一つの光が2つに分かれ、並んだり離れたりしながら同じ方向へ動き、約20分見えたといいます。その後の取材で、石垣島天文台は過去に夜間訓練の照明弾が似た光に見えた例があると説明しています。",
       "access": "百名ビーチは自由に行けますが、夜の海辺は足元と天候に注意してください。場所は地域単位で表示します。",
       "address": "沖縄県南城市（地域単位で表示）",
       "mapSearchQuery": "百名ビーチ",
       "regionOnly": true,
-      "area": {"lat": 26.15, "lng": 127.786, "radiusKm": 3},
+      "area": {
+        "lat": 26.15,
+        "lng": 127.786,
+        "radiusKm": 3
+      },
       "sources": [
         [
-          "Bastille Post（地元紙の引用）",
-          "https://www.bastillepost.com/hongkong/article/15673180"
+          "沖縄タイムス（目撃の報道）",
+          "https://www.okinawatimes.co.jp/articles/-/1875568"
+        ],
+        [
+          "沖縄タイムス（正体についての続報・Infoseek）",
+          "https://news.infoseek.co.jp/article/okinawatimes_1447665928308409111/"
+        ],
+        [
+          "沖縄タイムス（コラム）",
+          "https://www.okinawatimes.co.jp/articles/-/1884111"
         ]
       ]
     },
@@ -932,7 +1008,11 @@ window.UFO_DATA = {
       "address": "秋田県秋田市雄和（地域単位で表示）",
       "mapSearchQuery": "秋田空港",
       "regionOnly": true,
-      "area": {"lat": 39.616, "lng": 140.219, "radiusKm": 3},
+      "area": {
+        "lat": 39.616,
+        "lng": 140.219,
+        "radiusKm": 3
+      },
       "sources": [
         [
           "UFO研究ブログ（再検証）",
@@ -957,7 +1037,11 @@ window.UFO_DATA = {
       "address": "栃木県宇都宮市（地域単位で表示）",
       "mapSearchQuery": "栃木県 宇都宮市",
       "regionOnly": true,
-      "area": {"lat": 36.555, "lng": 139.883, "radiusKm": 12},
+      "area": {
+        "lat": 36.555,
+        "lng": 139.883,
+        "radiusKm": 12
+      },
       "sources": [
         [
           "UFO事件簿（個人ブログ）",
@@ -982,7 +1066,11 @@ window.UFO_DATA = {
       "address": "新潟県佐渡市（地域単位で表示）",
       "mapSearchQuery": "新潟県 佐渡市",
       "regionOnly": true,
-      "area": {"lat": 38.02, "lng": 138.37, "radiusKm": 20},
+      "area": {
+        "lat": 38.02,
+        "lng": 138.37,
+        "radiusKm": 20
+      },
       "sources": [
         [
           "東京スポーツ（2026年）",
@@ -1011,7 +1099,11 @@ window.UFO_DATA = {
       "address": "徳島県 剣山（地域単位で表示）",
       "mapSearchQuery": "剣山",
       "regionOnly": true,
-      "area": {"lat": 33.854, "lng": 134.094, "radiusKm": 3},
+      "area": {
+        "lat": 33.854,
+        "lng": 134.094,
+        "radiusKm": 3
+      },
       "sources": [
         [
           "徳島新聞（山小屋スタッフの連載）",
@@ -1036,7 +1128,11 @@ window.UFO_DATA = {
       "address": "岐阜県高山市一之宮町（地域単位で表示）",
       "mapSearchQuery": "位山",
       "regionOnly": true,
-      "area": {"lat": 36.08, "lng": 137.19, "radiusKm": 4},
+      "area": {
+        "lat": 36.08,
+        "lng": 137.19,
+        "radiusKm": 4
+      },
       "sources": [
         [
           "創楽（個人の登山サイト）",
@@ -1065,7 +1161,11 @@ window.UFO_DATA = {
       "address": "奈良県橿原市白橿町（地域単位で表示）",
       "mapSearchQuery": "益田岩船",
       "regionOnly": true,
-      "area": {"lat": 34.477, "lng": 135.783, "radiusKm": 1},
+      "area": {
+        "lat": 34.477,
+        "lng": 135.783,
+        "radiusKm": 1
+      },
       "sources": [
         [
           "関西ウォーカー",
