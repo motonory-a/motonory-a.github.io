@@ -1,6 +1,6 @@
-// 日本全国UFOミステリーマップ データ（2026-11-19 更新：108件・人物6件）
+// 日本全国UFOミステリーマップ データ（2026-11-19 更新：109件・人物6件）
 window.UFO_DATA = {
-  "reviewedAt": "2026-11-18",
+  "reviewedAt": "2026-11-19",
   "spots": [
     {
       "id": "senganmori",
@@ -1402,7 +1402,7 @@ window.UFO_DATA = {
       "mapSearchQuery": "青森県 三沢市〜下北半島",
       "regionOnly": true,
       "area": {
-        "lat": 41.0,
+        "lat": 41,
         "lng": 141.3,
         "radiusKm": 15
       },
@@ -2045,7 +2045,7 @@ window.UFO_DATA = {
       "regionOnly": true,
       "area": {
         "lat": 34.7,
-        "lng": 138.0,
+        "lng": 138,
         "radiusKm": 15
       },
       "sources": [
@@ -3177,6 +3177,39 @@ window.UFO_DATA = {
         [
           "大阪府",
           "https://www.pref.osaka.lg.jp/o040060/shichoson/dukuri/amanokawatanabata.html"
+        ]
+      ]
+    },
+    {
+      "id": "owl-lodge-tokorozawa",
+      "name": "OWL LODGE（アウルロッジ）",
+      "pref": "埼玉県",
+      "city": "所沢市下安松",
+      "kind": "event",
+      "era": "現在も営業",
+      "status": "official",
+      "visit": "public",
+      "lat": null,
+      "lng": null,
+      "lead": "UFOコンタクティのなおさんがいる、所沢のカフェ＆バー。お店でUFOを呼ぶ様子が紹介されています。",
+      "story": "テレビ番組でも「UFOを呼べる人」として紹介された、なおさんのお店。来店した人のためにUFOを呼んだときの動画が、本人のYouTubeチャンネルで見られると店の公式サイトで紹介されています。UFOを呼べるというのは本人とお店の紹介によるもので、確かめられた能力ではありません。来店しても必ず見られるわけではありません。",
+      "access": "営業日や来店の方法は、お店の公式サイト・公式リンク集で確認してください。場所は地域単位で表示しています。",
+      "address": "埼玉県所沢市下安松（地域単位で表示）",
+      "mapSearchQuery": "OWL LODGE 所沢 アウルロッジ",
+      "regionOnly": true,
+      "area": {
+        "lat": 35.803,
+        "lng": 139.505,
+        "radiusKm": 1.5
+      },
+      "sources": [
+        [
+          "店の公式サイト",
+          "https://owllodge.amebaownd.com/"
+        ],
+        [
+          "本人の公式リンク集",
+          "https://1link.jp/owllodge"
         ]
       ]
     }
