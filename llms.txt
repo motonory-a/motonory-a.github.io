@@ -22,6 +22,7 @@
 - 高次元SHOP（天然石ブレスレットのネットショップ）: https://kojigen.base.shop/
 - 琉球ユタ家系 あき｜霊視鑑定: https://motonory-a.github.io/aki-reishi/
 - 日本全国UFOミステリーマップ: https://motonory-a.github.io/ufo/ （UFO目撃談のある場所・宇宙人遭遇事件・観測会・都市伝説を出典つきで紹介）
+- いしけん！〜天然石研究部〜: https://motonory-a.github.io/ishiken369/ （天然石を女の子にしたキャラクター369人の公式サイト。推しの石を見つける診断、4コマ漫画、推しの子とAIでおしゃべりできる「いしけん！トーク」。運営はリュウライド株式会社）
 - 幽かの地図（かすかのちず）日本全国 心霊・縁起案内: https://motonory-a.github.io/kasuka/ （全国47都道府県の心霊スポット・呪いの伝承・呪物・怪談の舞台・座敷童や福の伝承、約1,800件を地図で紹介。土地の歴史と出典つき。原爆・戦跡・災害の地は「慰霊の地」として別扱い。都道府県別一覧 https://motonory-a.github.io/kasuka/p/index.html ）
 
 ## 発信

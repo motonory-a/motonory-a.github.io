@@ -6,3 +6,4 @@ Sitemap: https://motonory-a.github.io/japan-power-spots/sitemap.xml
 Sitemap: https://motonory-a.github.io/my-first-project/sitemap.xml
 Sitemap: https://motonory-a.github.io/kippoui-hikkoshi/sitemap.xml
 Sitemap: https://motonory-a.github.io/kasuka/sitemap.xml
+Sitemap: https://motonory-a.github.io/ishiken369/sitemap.xml
