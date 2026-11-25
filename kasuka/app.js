@@ -41,9 +41,9 @@
   const landStyle = () => ({ color: css('--fog'), weight: .8, opacity: .55, fillColor: document.documentElement.dataset.mode === 'light' ? '#E3DFD2' : '#1B2C37', fillOpacity: 1 });
   let landLayer;
   let map, cluster, heatLayer, rangeLayer, routeLine, rMap, rLine, tiles;
-  const TILE = { dark: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', light: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png' };
-  const ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>';
-  function mkTiles(m) { return L.tileLayer(TILE[document.documentElement.dataset.mode === 'light' ? 'light' : 'dark'], { attribution: ATTR, subdomains: 'abcd', maxZoom: 17 }).addTo(m); }
+  const TILE = 'https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png';
+  const ATTR = '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル</a>';
+  function mkTiles(m) { return L.tileLayer(TILE, { attribution: ATTR, maxZoom: 18, maxNativeZoom: 18, minZoom: 5, className: 'gsi' }).addTo(m); }
   function initMap() {
     map = L.map('map', { zoomControl: false, minZoom: 4, maxZoom: 17, worldCopyJump: false }).setView([36.3, 137.5], 5);
     L.control.zoom({ position: 'bottomleft' }).addTo(map);

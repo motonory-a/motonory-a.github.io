@@ -264,3 +264,7 @@ html[data-mode=light] .cl{background:rgba(243,240,231,.9)}
 
 ruby rt{font-size:.42em;letter-spacing:.05em;font-family:var(--body);opacity:.85}
 .logo b{line-height:1.35}
+
+/* 地理院タイル(淡色)を夜の色に */
+html[data-mode=dark] .leaflet-tile-pane .gsi{filter:invert(1) hue-rotate(185deg) brightness(.62) contrast(.9) saturate(.35)}
+html[data-mode=light] .leaflet-tile-pane .gsi{filter:saturate(.55) sepia(.12)}
