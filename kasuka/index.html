@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja" data-mode="dark" data-side="恐怖">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>幽かの地図(かすかのちず)｜日本全国 心霊スポット・呪物・座敷童 縁起案内</title>
+<meta name="description" content="全国の心霊スポット、呪いの言い伝え、呪物、怪談の舞台、座敷童や福の伝承を地図でたどる「幽かの地図(かすかのちず)」。怖さと縁起を、土地の歴史と祈りとともに。">
+<meta property="og:title" content="幽かの地図｜日本全国 心霊・縁起案内">
+<meta property="og:description" content="その場所には、まだ、物語がある。全国の心霊スポット・呪物・座敷童を地図で。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://motonory-a.github.io/kasuka/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#101B24">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<link rel="stylesheet" href="vendor/MarkerCluster.css">
+<link rel="stylesheet" href="style.css">
+<script>try{var m=localStorage.getItem('rei_mode');if(m)document.documentElement.dataset.mode=JSON.parse(m)}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">本文へ</a>
+<header class="top">
+  <a class="logo" href="#map" aria-label="幽かの地図 トップ"><span class="logo-mark" aria-hidden="true"></span><span><b><ruby>幽<rt>かす</rt></ruby>かの地図</b><small>日本全国 心霊・縁起案内</small></span></a>
+  <nav class="top-nav" aria-label="ページ">
+    <a href="#map" data-view="map">地図を歩く</a><a href="#zukan" data-view="zukan">不思議の図鑑</a><a href="#route" data-view="route">めぐる道</a><a href="#journal" data-view="journal">記録帳</a>
+  </nav>
+  <button id="modeBtn" class="btn-sub mode-btn" type="button">明るくする</button>
+</header>
+
+<main id="main">
+<!-- ===== 地図を歩く ===== -->
+<section class="view" id="v-map" data-view="map">
+  <div class="hero">
+    <picture class="hero-pic"><source media="(max-width:760px)" srcset="assets/hero-mobile.jpg"><img src="assets/hero-wide.jpg" alt="" onerror="this.closest('.hero').classList.add('no-img');this.parentNode.remove()"></picture>
+    <div class="hero-sky" aria-hidden="true"><i class="moon"></i></div>
+    <div class="hero-in">
+      <p class="eyebrow">恐れと、祈りのあいだを歩く。</p>
+      <h1>その場所には、<br>まだ、物語がある。</h1>
+      <p class="hero-lead">土地に残る記憶と、不思議な言い伝え。<br>青い灯りと金の灯りを、静かにたどる。</p>
+      <button class="btn-main" data-locate type="button">近くの心霊スポットを探す <span aria-hidden="true">↗</span></button>
+    </div>
+    <p class="hero-tate" aria-hidden="true">怖さの先に、手を合わせる。</p>
+    <p class="hero-note">風景はイメージです</p>
+  </div>
+
+  <div class="wrap">
+    <div class="sec-head"><h2>灯りをたどる</h2><p>知らない土地に、<br>残された物語を探して。</p></div>
+    <div class="side-tabs" role="tablist" aria-label="表示の切り替え">
+      <button role="tab" data-side="恐怖" aria-selected="true"><i class="dot oni"></i>恐怖</button>
+      <button role="tab" data-side="縁起" aria-selected="false"><i class="dot gold"></i>縁起</button>
+      <button role="tab" data-side="すべて" aria-selected="false">すべて</button>
+    </div>
+    <div class="search-row">
+      <input id="q" type="search" placeholder="場所・言い伝えを探す" aria-label="キーワードで探す">
+      <select id="prefSel" aria-label="都道府県"></select>
+      <button id="filterToggle" class="btn-sub" type="button" aria-expanded="false">絞り込み <span>＋</span></button>
+    </div>
+    <div id="filters" class="filters" hidden>
+      <div class="f-row"><span class="f-label">種類</span><div id="typeChips" class="chips"></div></div>
+      <div class="f-row"><span class="f-label">分類</span><div id="catChips" class="chips"></div></div>
+      <div class="f-row"><label class="f-label" for="levelSel">度合い</label>
+        <select id="levelSel"><option value="1">すべて</option><option value="2">2以上</option><option value="3">3以上</option><option value="4">4以上</option><option value="5">5のみ</option></select>
+        <button id="resetBtn" class="btn-link" type="button">条件を戻す</button></div>
+    </div>
+  </div>
+
+  <div class="map-box">
+    <div id="map" class="map" aria-label="地図"></div>
+    <div class="map-tools">
+      <button class="btn-tool" data-locate type="button">現在地の近く</button>
+      <button id="heatBtn" class="btn-tool" type="button" aria-pressed="false">霊気の濃さ <span>切</span></button>
+      <button id="allBtn" class="btn-tool" type="button">全国を見る</button>
+    </div>
+    <p class="map-count"><span id="count">…</span></p>
+  </div>
+
+  <div class="wrap">
+    <section class="tonight" id="tonight" aria-live="polite"></section>
+
+    <section class="near-sec">
+      <div class="sec-head"><h2>あなたの近く</h2><p id="nearNote">位置情報を許可すると、近い順に並びます。<br>位置はこの端末の中だけで使います。</p></div>
+      <div id="near" class="near"><button class="btn-sub" data-locate type="button">現在地から探す</button></div>
+    </section>
+
+    <section class="after" id="after">
+      <div class="sec-head"><h2>帰ってきたら</h2><p>怖さのあとは、<br>心を整えて。</p></div>
+      <div class="after-cols">
+        <div><h3>家に入る前に</h3><p>玄関の外で肩を軽く払い、手と口をすすいで、ひと息。窓を開けて風を通し、塩をひとつまみ。昔からの、心を切り替えるための習わしです。</p></div>
+        <div><h3>手を合わせた場所を思う</h3><p>怖い噂の裏には、多くの場合、亡くなった方や土地の歴史があります。「どうか安らかに」と思い出してあげることも、供養のひとつです。</p></div>
+        <div><h3>気になることが残ったら</h3>
+          <ul class="link-list">
+            <li><a href="https://kojigen.base.shop/" target="_blank" rel="noopener">お清めミストと魔除けの天然石 ― 高次元SHOP ↗</a></li>
+            <li><a href="https://lin.ee/wHX3skr3" target="_blank" rel="noopener">アッキーのLINE公式で相談する ↗</a></li>
+            <li><a href="https://www.youtube.com/@nigihayahi03/videos" target="_blank" rel="noopener">YouTube アッキーの『ニギハヤヒと俺日記』 ↗</a></li>
+          </ul></div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- ===== 図鑑 ===== -->
+<section class="view" id="v-zukan" data-view="zukan" hidden>
+  <div class="wrap page-head">
+    <p class="eyebrow">地図に載らない、不思議もある。</p>
+    <h2 class="page-title">不思議の図鑑</h2>
+    <p class="page-lead">古い帳面を、一頁ずつ。怪異も福も、言い伝えとして読む。</p>
+    <div id="zukanTabs" class="z-tabs" role="tablist"></div>
+    <div class="z-book">
+      <div class="z-bind" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <article id="zukanPage" class="z-page" aria-live="polite"></article>
+    </div>
+    <div class="z-pager"><button id="zPrev" class="btn-sub" type="button">← 前の頁</button><span id="zNum"></span><button id="zNext" class="btn-sub" type="button">次の頁 →</button></div>
+    <h3 class="sub-title">この章の目次</h3>
+    <div id="zukanIndex" class="z-index"></div>
+  </div>
+</section>
+
+<!-- ===== めぐる道 ===== -->
+<section class="view" id="v-route" data-view="route" hidden>
+  <div class="wrap page-head">
+    <p class="eyebrow">ひとりでも、仲間とでも。</p>
+    <h2 class="page-title">めぐる道</h2>
+    <p class="page-lead">肝試しルートを、土地の物語を知る旅へ。</p>
+    <p class="warn">線は地点を結ぶ目安です。通行できる道や所要時間を示すものではありません。</p>
+    <div class="route-cols">
+      <div>
+        <ol id="routeList" class="route-list"></ol>
+        <div class="row-btns"><button id="routeShare" class="btn-main" type="button">ルートURLを共有</button><button id="routeImg" class="btn-sub" type="button">共有画像を保存</button><button id="routeClear" class="btn-link" type="button">空にする</button></div>
+        <div id="routeMap" class="route-map"></div>
+      </div>
+      <aside class="route-aside">
+        <h3>訪ねる前に、ひとつだけ。</h3>
+        <p>立入禁止の場所には入らない。私有地と近隣の暮らしを守り、夜の訪問は控えめに。寺社・施設の公開時間を確かめてから。</p>
+        <p>詳細の「ルートに追加」から、最大12か所まで並べられます。矢印で順番を変えられます。</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 記録帳 ===== -->
+<section class="view" id="v-journal" data-view="journal" hidden>
+  <div class="wrap page-head">
+    <p class="eyebrow">訪ねた記憶を、そっと綴る。</p>
+    <h2 class="page-title">わたしの記録帳</h2>
+    <p class="page-lead">この端末で「行った」「気になる」「合掌」を残せます。</p>
+    <div id="jStats" class="j-stats"></div>
+    <div class="j-tabs" role="tablist"><button role="tab" data-j="went" aria-selected="true">行った</button><button role="tab" data-j="want" aria-selected="false">気になる</button><button role="tab" data-j="gassho" aria-selected="false">合掌</button></div>
+    <ul id="jList" class="j-list"></ul>
+    <h3 class="sub-title">都道府県の足あと</h3>
+    <p id="jPrefNote" class="note"></p>
+    <div id="jPrefs" class="stamps"></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div><p class="foot-logo"><ruby>幽<rt>かす</rt></ruby>かの地図</p><p class="note">高次元ネゴシエイター アッキー</p>
+      <p class="foot-links"><a href="p/index.html">都道府県から探す</a><a href="https://motonory-a.github.io/japan-power-spots/">パワースポット巡り</a><a href="https://motonory-a.github.io/ufo/">UFOミステリーマップ</a><a href="https://kaiun.nigihayahi03.com/">開運の町ランキングリサーチ</a><a href="https://motonory-a.github.io/">サイト一覧</a></p></div>
+    <div class="note">
+      <p>伝承やうわさを紹介する地図です。超常現象の実在を保証するものではありません。度合いは編集部の目安です。</p>
+      <p>立入禁止の場所や私有地には入らないでください。近くに住む方の暮らしがあります。夜間の騒音・ゴミ・落書きは絶対にやめてください。掲載は訪問の許可を意味しません。</p>
+      <p>つらい気持ちを抱えているときは、ひとりで抱えずに相談を。<a href="https://www.mhlw.go.jp/mamorouyokokoro/" target="_blank" rel="noopener">まもろうよ こころ(厚生労働省)</a></p>
+      <p>地図:&copy; OpenStreetMap contributors &copy; CARTO</p>
+    </div>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="ページ">
+  <a href="#map" data-view="map"><svg viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z M9 4v14 M15 6v14"/></svg>地図</a>
+  <a href="#zukan" data-view="zukan"><svg viewBox="0 0 24 24"><path d="M4 4h7a2 2 0 012 2v14a2 2 0 00-2-2H4z M20 4h-7a2 2 0 00-2 2v14a2 2 0 012-2h7z"/></svg>図鑑</a>
+  <a href="#route" data-view="route"><svg viewBox="0 0 24 24"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h6a3 3 0 000-6h-4a3 3 0 010-6h6"/></svg>ルート</a>
+  <a href="#journal" data-view="journal"><svg viewBox="0 0 24 24"><path d="M6 3h10l3 3v15H6z M9 9h7 M9 13h7 M9 17h4"/></svg>記録帳</a>
+</nav>
+
+<div id="sheetBack" class="sheet-back" hidden></div>
+<aside id="drawer" class="sheet" role="dialog" aria-modal="true" aria-labelledby="dName" hidden>
+  <div class="sheet-grip" aria-hidden="true"></div>
+  <div class="sheet-top"><span>土地の記憶をひらく</span><button id="drawerClose" class="btn-link" type="button">閉じる ✕</button></div>
+  <div id="drawerBody" class="sheet-body"></div>
+</aside>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/leaflet.markercluster.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
